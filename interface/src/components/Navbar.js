@@ -1,7 +1,36 @@
 import { NavLink as Link } from 'react-router-dom';
 import QRCode from "react-qr-code";
+import { useAccount } from 'wagmi'
+import { ethers } from "ethers";
+import { useEffect, useState } from 'react';
+import { usePublicClient } from 'wagmi'
+import nftABI from "./../nftABI.json";
+import {CopyToClipboard} from 'react-copy-to-clipboard';
 
-function Navbar({selected, loggedIn}) {
+function Navbar({selected}) {
+
+    const { address, isConnected } = useAccount()
+    const provider = usePublicClient()
+    const [loggedIn, setLoggedIn] = useState(false)
+    const [abyssWallet, setAbyssWallet] = useState("0x18254FE57fD3B4E8f84a11a26bBB37eD279A64b7")
+
+    useEffect(() => {
+        if(isConnected) {
+            (async () => {
+                const _provider = new ethers.utils.JsonRpcProvider("http://127.0.0.1:8011");
+                const soulBountContract = new ethers.Contract(process.env.REACT_APP_NFT_CREATOR_CONTRACT, nftABI, _provider);
+                let tokenId = await soulBountContract.tokenID(address);
+                if(tokenId > 0) {
+                    let tokenURI = await soulBountContract.tokenURI(tokenId)
+                    let response = await fetch(tokenURI)
+                    let data = await response.json()
+                    setAbyssWallet(data.multiSig)
+                    setLoggedIn(true)
+                } 
+            })();
+        }
+    },[isConnected])
+
     return (
         <div className="w-[380px] px-4 bg-[#f8fafc]">
             <div className="flex flex-col justify-between h-full">
@@ -12,11 +41,18 @@ function Navbar({selected, loggedIn}) {
                             <div className="font-semibold text-4xl">abyss</div>
                         </div>
                         <div className="flex p-1 space-x-6">
-                            <div className={`${loggedIn ? "" : "blur-sm"} flex items-center justify-center rounded-lg w-[80px] h-[80px] bg-white`}><QRCode className='w-[65px] h-[65px]' value="hey"/></div>
-                            <div className="space-y-2">
+                            <div className={`${loggedIn ? "" : "blur-sm"} flex items-center justify-center rounded-lg w-[80px] h-[80px] bg-white`}><QRCode className='w-[65px] h-[65px]' value={abyssWallet}/></div>
+                            <div className="space-y-1">
                                 <div className="font-medium text-sm text-[#64748B]">Abyss Wallet</div>
-                                <div className={`${loggedIn ? "" : "blur-sm"} text-[#94A3B8] font-bold`}>123123213123</div>
-                                <div className="text-[#64748B]">explorer</div>
+                                <div className='flex space-x-1'>
+                                    <div className={`${loggedIn ? "" : "blur-sm"} text-[#94A3B8] font-semibold`}>
+                                        {abyssWallet.substring(0,6) + "..." + abyssWallet.substring(abyssWallet.length-4,abyssWallet.length)}
+                                    </div>
+                                    <CopyToClipboard text={abyssWallet}>
+                                    <button><svg data-v-593ef8b9="" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-slate-400"><path class="copy_svg__copy-path" d="M14.1145 9.94827C14.1816 8.8779 14.2168 7.76883 14.2168 6.63246C14.2168 6.17207 14.211 5.71616 14.1997 5.26549C14.1917 4.94654 14.0882 4.63658 13.8994 4.37941C13.185 3.40646 12.6153 2.80088 11.6777 2.07698C11.4181 1.87657 11.0995 1.76786 10.7717 1.76072C10.4455 1.75361 10.105 1.75 9.74121 1.75C8.63995 1.75 7.75104 1.78308 6.8319 1.84613C6.04346 1.90021 5.41726 2.5279 5.36787 3.31665C5.30084 4.38702 5.26562 5.49608 5.26562 6.63246C5.26562 7.76883 5.30085 8.8779 5.36787 9.94827C5.41726 10.737 6.04346 11.3647 6.8319 11.4188C7.75104 11.4818 8.63995 11.5149 9.74121 11.5149C10.8425 11.5149 11.7314 11.4818 12.6505 11.4188C13.439 11.3647 14.0652 10.737 14.1145 9.94827Z" stroke="currentColor" stroke-width="2"></path><path class="copy_svg__copy-path" d="M10.6341 12.6834C10.7011 11.613 10.7363 10.5039 10.7363 9.36756C10.7363 8.90717 10.7306 8.45126 10.7192 8.00059C10.7112 7.68165 10.6078 7.37169 10.4189 7.11452C9.70458 6.14157 9.13488 5.53599 8.19725 4.81209C7.93767 4.61167 7.61907 4.50297 7.29121 4.49582C6.96506 4.48872 6.62448 4.48511 6.26074 4.48511C5.15949 4.48511 4.27057 4.51819 3.35143 4.58123C2.56299 4.63531 1.9368 5.26301 1.88741 6.05176C1.82038 7.12213 1.78516 8.23119 1.78516 9.36756C1.78516 10.5039 1.82038 11.613 1.88741 12.6834C1.9368 13.4721 2.56299 14.0998 3.35143 14.1539C4.27057 14.2169 5.15949 14.25 6.26074 14.25C7.362 14.25 8.25091 14.2169 9.17005 14.1539C9.95849 14.0998 10.5847 13.4721 10.6341 12.6834Z" stroke="currentColor" stroke-width="2"></path></svg></button>
+                                    </CopyToClipboard>
+                                </div>
+                                <div className="text-[#64748B] text-xs">supported network</div>
                             </div>
                         </div>
                     </div>

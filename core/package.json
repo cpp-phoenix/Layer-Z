@@ -25,6 +25,8 @@
   "scripts": {
     "test": "NODE_ENV=test hardhat test --network zkSyncTestnet",
     "deploy:factory": "yarn hardhat deploy-zksync --script deploy-factory.ts",
-    "deploy:multisig": "yarn hardhat deploy-zksync --script deploy-multisig.ts"
+    "deploy:multisig": "yarn hardhat deploy-zksync --script deploy-multisig.ts",
+    "deploy:nft": "yarn hardhat deploy-zksync --script deploy-nft.ts",
+    "deploy:token": "yarn hardhat deploy-zksync --script deploy-token.ts"
   }
 }

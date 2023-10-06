@@ -1,724 +1,689 @@
-02:33:11 [INFO] Starting network with chain id: L2ChainId(260)
-02:33:11 [INFO] Rich Accounts
-02:33:11 [INFO] =============
-02:33:11 [INFO] Account #0: 0x36615Cf349d7F6344891B1e7CA7C72883F5dc049 (1_000_000_000_000 ETH)
-02:33:11 [INFO] Private Key: 0x7726827caac94a7f9e1b160f7ea819f172f7b6f9d2a97f992c38edeab82d4110
-02:33:11 [INFO] 
-02:33:11 [INFO] Account #1: 0xa61464658AfeAf65CccaaFD3a512b69A83B77618 (1_000_000_000_000 ETH)
-02:33:11 [INFO] Private Key: 0xac1e735be8536c6534bb4f17f06f6afc73b2b5ba84ac2cfb12f7461b20c0bbe3
-02:33:11 [INFO] 
-02:33:11 [INFO] Account #2: 0x0D43eB5B8a47bA8900d84AA36656c92024e9772e (1_000_000_000_000 ETH)
-02:33:11 [INFO] Private Key: 0xd293c684d884d56f8d6abd64fc76757d3664904e309a0645baf8522ab6366d9e
-02:33:11 [INFO] 
-02:33:11 [INFO] Account #3: 0xA13c10C0D5bd6f79041B9835c63f91de35A15883 (1_000_000_000_000 ETH)
-02:33:11 [INFO] Private Key: 0x850683b40d4a740aa6e745f889a6fdc8327be76e122f5aba645a5b02d0248db8
-02:33:11 [INFO] 
-02:33:11 [INFO] Account #4: 0x8002cD98Cfb563492A6fB3E7C8243b7B9Ad4cc92 (1_000_000_000_000 ETH)
-02:33:11 [INFO] Private Key: 0xf12e28c0eb1ef4ff90478f6805b68d63737b7f33abfa091601140805da450d93
-02:33:11 [INFO] 
-02:33:11 [INFO] Account #5: 0x4F9133D1d3F50011A6859807C837bdCB31Aaab13 (1_000_000_000_000 ETH)
-02:33:11 [INFO] Private Key: 0xe667e57a9b8aaa6709e51ff7d093f1c5b73b63f9987e4ab4aa9a5c699e024ee8
-02:33:11 [INFO] 
-02:33:11 [INFO] Account #6: 0xbd29A1B981925B94eEc5c4F1125AF02a2Ec4d1cA (1_000_000_000_000 ETH)
-02:33:11 [INFO] Private Key: 0x28a574ab2de8a00364d5dd4b07c4f2f574ef7fcc2a86a197f65abaec836d1959
-02:33:11 [INFO] 
-02:33:11 [INFO] Account #7: 0xedB6F5B4aab3dD95C7806Af42881FF12BE7e9daa (1_000_000_000_000 ETH)
-02:33:11 [INFO] Private Key: 0x74d8b3a188f7260f67698eb44da07397a298df5427df681ef68c45b34b61f998
-02:33:11 [INFO] 
-02:33:11 [INFO] Account #8: 0xe706e60ab5Dc512C36A4646D719b889F398cbBcB (1_000_000_000_000 ETH)
-02:33:11 [INFO] Private Key: 0xbe79721778b48bcc679b78edac0ce48306a8578186ffcb9f2ee455ae6efeace1
-02:33:11 [INFO] 
-02:33:11 [INFO] Account #9: 0xE90E12261CCb0F3F7976Ae611A29e84a6A85f424 (1_000_000_000_000 ETH)
-02:33:11 [INFO] Private Key: 0x3eb15da85647edd9a1159a4a13b9e7c56877c4eb33f614546d4db06a51868b1c
-02:33:11 [INFO] 
-02:33:11 [INFO] ========================================
-02:33:11 [INFO]   Node is ready at 127.0.0.1:8011
-02:33:11 [INFO] ========================================
-03:02:41 [INFO] 
-03:02:41 [INFO] Executing [1m0xf50cde029da66d49fdb4c4a78691c4fa7058c466744d6074e47b697d40ce5889[0m
-03:02:41 [INFO] ┌─────────────────────────┐
-03:02:41 [INFO] │   TRANSACTION SUMMARY   │
-03:02:41 [INFO] └─────────────────────────┘
-03:02:41 [INFO] Transaction: [32mSUCCESS[0m
-03:02:41 [INFO] Initiator: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-03:02:41 [INFO] Payer: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-03:02:41 [INFO] Gas - Limit: 188_982_341 | Used: 155_999_881 | Refunded: 32_982_460
-03:02:41 [INFO] Use --show-gas-details flag or call config_setShowGasDetails to display more info
-03:02:41 [INFO] 
-03:02:41 [INFO] ==== Console logs: 
-03:02:41 [INFO] 
-03:02:41 [INFO] ==== [1m24 call traces. [0m Use --show-calls flag or call config_setShowCalls to display more info.
-03:02:41 [INFO] 
-03:02:41 [INFO] ==== [1m7 events[0m
-03:02:41 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x0000000000000000000000000000000000000000000000000000000000008001
-03:02:41 [INFO] [34mL1 messenger                              [0m 0x3a36e47291f4201faf137fab081d92295bce2d53be2c6ca68ba82c7faa9ce241, 0x000000000000000000000000000000000000000000000000000000000000800e, 0xab7341923141215e0b0a24617886058a75eda4bca566b1b864cf455140d91e2a
-03:02:41 [INFO] [34mKnown code storage                        [0m 0xc94722ff13eacf53547c4741dab5228353a05938ffcdd5d4a2d533ae0e618287, 0x010006efc7958116f7d0acd68a0a72162007a9aa5e4f718b6d7bd7c37a793f6c, 0x0000000000000000000000000000000000000000000000000000000000000000
-03:02:41 [INFO] [34mL1 messenger                              [0m 0x3a36e47291f4201faf137fab081d92295bce2d53be2c6ca68ba82c7faa9ce241, 0x000000000000000000000000000000000000000000000000000000000000800e, 0x3fe7b932cf42854ed08edd16ed3e6b99be1af70e4cd6cf5b2e5d3c2300392f62
-03:02:41 [INFO] [34mKnown code storage                        [0m 0xc94722ff13eacf53547c4741dab5228353a05938ffcdd5d4a2d533ae0e618287, 0x0100007391a6773025c87c962eea39f459d13e0b9532fdbc167199f0d9c69ea0, 0x0000000000000000000000000000000000000000000000000000000000000000
-03:02:41 [INFO] [34mL2 deployer                               [0m 0x290afdae231a3fc0bbae8b1af63698b0a1d79b21ad17df0342dfb952fe74f8e5, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x0100007391a6773025c87c962eea39f459d13e0b9532fdbc167199f0d9c69ea0, 0x000000000000000000000000111c3e89ce80e62ee88318c2804920d4c96f92bb
-03:02:41 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x0000000000000000000000000000000000000000000000000000000000008001, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049
-03:02:41 [INFO] 
-03:02:41 [INFO] 
-03:10:19 [INFO] [31mUnable to estimate gas for the request with our suggested gas limit of 104119784. The transaction is most likely unexecutable. Breakdown of estimation:[0m
-03:10:19 [INFO] [31m	Estimated transaction body gas cost: 80000000[0m
-03:10:19 [INFO] [31m	Gas for pubdata: 0[0m
-03:10:19 [INFO] [31m	Overhead: 24119784[0m
-03:10:19 [INFO] [41mexecution reverted: Deployment failed[0m
-03:12:43 [INFO] [31mUnable to estimate gas for the request with our suggested gas limit of 104119784. The transaction is most likely unexecutable. Breakdown of estimation:[0m
-03:12:43 [INFO] [31m	Estimated transaction body gas cost: 80000000[0m
-03:12:43 [INFO] [31m	Gas for pubdata: 0[0m
-03:12:43 [INFO] [31m	Overhead: 24119784[0m
-03:12:43 [INFO] [41mexecution reverted: Deployment failed[0m
-03:16:21 [INFO] [31mUnable to estimate gas for the request with our suggested gas limit of 104119784. The transaction is most likely unexecutable. Breakdown of estimation:[0m
-03:16:21 [INFO] [31m	Estimated transaction body gas cost: 80000000[0m
-03:16:21 [INFO] [31m	Gas for pubdata: 0[0m
-03:16:21 [INFO] [31m	Overhead: 24119784[0m
-03:16:21 [INFO] [41mexecution reverted: Deployment failed[0m
-03:17:06 [INFO] 
-03:17:06 [INFO] Executing [1m0xe0ae8516a4517a78dca5b3b25990e34cff3f77c066e61c0231b57621b1c15b18[0m
-03:17:06 [INFO] ┌─────────────────────────┐
-03:17:06 [INFO] │   TRANSACTION SUMMARY   │
-03:17:06 [INFO] └─────────────────────────┘
-03:17:06 [INFO] Transaction: [32mSUCCESS[0m
-03:17:06 [INFO] Initiator: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-03:17:06 [INFO] Payer: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-03:17:06 [INFO] Gas - Limit: 2_181_024 | Used: 1_300_044 | Refunded: 880_980
-03:17:06 [INFO] Use --show-gas-details flag or call config_setShowGasDetails to display more info
-03:17:06 [INFO] 
-03:17:06 [INFO] ==== Console logs: 
-03:17:06 [INFO] 
-03:17:06 [INFO] ==== [1m20 call traces. [0m Use --show-calls flag or call config_setShowCalls to display more info.
-03:17:06 [INFO] 
-03:17:06 [INFO] ==== [1m3 events[0m
-03:17:06 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x0000000000000000000000000000000000000000000000000000000000008001
-03:17:06 [INFO] [34mL2 deployer                               [0m 0x290afdae231a3fc0bbae8b1af63698b0a1d79b21ad17df0342dfb952fe74f8e5, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x0100007391a6773025c87c962eea39f459d13e0b9532fdbc167199f0d9c69ea0, 0x0000000000000000000000004b5df730c2e6b28e17013a1485e5d9bc41efe021
-03:17:06 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x0000000000000000000000000000000000000000000000000000000000008001, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049
-03:17:06 [INFO] 
-03:17:06 [INFO] 
-03:17:27 [INFO] [31mUnable to estimate gas for the request with our suggested gas limit of 104119784. The transaction is most likely unexecutable. Breakdown of estimation:[0m
-03:17:27 [INFO] [31m	Estimated transaction body gas cost: 80000000[0m
-03:17:27 [INFO] [31m	Gas for pubdata: 0[0m
-03:17:27 [INFO] [31m	Overhead: 24119784[0m
-03:17:27 [INFO] [41mexecution reverted: Deployment failed[0m
-08:28:14 [INFO] 
-08:28:14 [INFO] Executing [1m0x613fba1c4e5be62eeb66474f7ca1f1b8214d3dc8ea1f521af2313ae57b92e510[0m
-08:28:14 [INFO] ┌─────────────────────────┐
-08:28:14 [INFO] │   TRANSACTION SUMMARY   │
-08:28:14 [INFO] └─────────────────────────┘
-08:28:14 [INFO] Transaction: [32mSUCCESS[0m
-08:28:14 [INFO] Initiator: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-08:28:15 [INFO] Payer: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-08:28:15 [INFO] Gas - Limit: 194_038_149 | Used: 160_126_969 | Refunded: 33_911_180
-08:28:15 [INFO] Use --show-gas-details flag or call config_setShowGasDetails to display more info
-08:28:15 [INFO] 
-08:28:15 [INFO] ==== Console logs: 
-08:28:15 [INFO] 
-08:28:15 [INFO] ==== [1m24 call traces. [0m Use --show-calls flag or call config_setShowCalls to display more info.
-08:28:15 [INFO] 
-08:28:15 [INFO] ==== [1m7 events[0m
-08:28:15 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x0000000000000000000000000000000000000000000000000000000000008001
-08:28:15 [INFO] [34mL1 messenger                              [0m 0x3a36e47291f4201faf137fab081d92295bce2d53be2c6ca68ba82c7faa9ce241, 0x000000000000000000000000000000000000000000000000000000000000800e, 0x265b32f9b59319b7b2abd71e6c40440893215c1a84164171b4905fff04221b4b
-08:28:15 [INFO] [34mKnown code storage                        [0m 0xc94722ff13eacf53547c4741dab5228353a05938ffcdd5d4a2d533ae0e618287, 0x0100072394c85d1fd822223ed0dec4cc583b946e80e4d983c928df4a604c53e0, 0x0000000000000000000000000000000000000000000000000000000000000000
-08:28:15 [INFO] [34mL1 messenger                              [0m 0x3a36e47291f4201faf137fab081d92295bce2d53be2c6ca68ba82c7faa9ce241, 0x000000000000000000000000000000000000000000000000000000000000800e, 0xa93ba5aa78a653f27194ee90d0c329cd0dd683c90715fec1f1eeb6553b597247
-08:28:15 [INFO] [34mKnown code storage                        [0m 0xc94722ff13eacf53547c4741dab5228353a05938ffcdd5d4a2d533ae0e618287, 0x0100007ba63515a0b49f30226d1d66436e2e65a9b33e7be85ff48dac2beec8c5, 0x0000000000000000000000000000000000000000000000000000000000000000
-08:28:15 [INFO] [34mL2 deployer                               [0m 0x290afdae231a3fc0bbae8b1af63698b0a1d79b21ad17df0342dfb952fe74f8e5, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x0100007ba63515a0b49f30226d1d66436e2e65a9b33e7be85ff48dac2beec8c5, 0x00000000000000000000000026b368c3ed16313ebd6660b72d8e4439a697cb0b
-08:28:15 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x0000000000000000000000000000000000000000000000000000000000008001, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049
-08:28:15 [INFO] 
-08:28:15 [INFO] 
-08:29:45 [INFO] 
-08:29:45 [INFO] Executing [1m0x2d9121655e25a5e0ea4dd9a5a4e12cca3a92ade0c0d5d60cd3f6ec97efa87f15[0m
-08:29:45 [INFO] ┌─────────────────────────┐
-08:29:45 [INFO] │   TRANSACTION SUMMARY   │
-08:29:45 [INFO] └─────────────────────────┘
-08:29:45 [INFO] Transaction: [32mSUCCESS[0m
-08:29:45 [INFO] Initiator: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-08:29:45 [INFO] Payer: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-08:29:45 [INFO] Gas - Limit: 3_160_009 | Used: 2_170_656 | Refunded: 989_353
-08:29:45 [INFO] Use --show-gas-details flag or call config_setShowGasDetails to display more info
-08:29:45 [INFO] 
-08:29:45 [INFO] ==== Console logs: 
-08:29:45 [INFO] 
-08:29:45 [INFO] ==== [1m20 call traces. [0m Use --show-calls flag or call config_setShowCalls to display more info.
-08:29:45 [INFO] 
-08:29:45 [INFO] ==== [1m3 events[0m
-08:29:45 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x0000000000000000000000000000000000000000000000000000000000008001
-08:29:45 [INFO] [34mL2 deployer                               [0m 0x290afdae231a3fc0bbae8b1af63698b0a1d79b21ad17df0342dfb952fe74f8e5, 0x00000000000000000000000026b368c3ed16313ebd6660b72d8e4439a697cb0b, 0x0100072394c85d1fd822223ed0dec4cc583b946e80e4d983c928df4a604c53e0, 0x000000000000000000000000e1fbe156b66af69d6d813092f315576acf1d435d
-08:29:45 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x0000000000000000000000000000000000000000000000000000000000008001, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049
-08:29:45 [INFO] 
-08:29:45 [INFO] 
-08:29:45 [INFO] Call: [32mSUCCESS[0m
-08:29:45 [INFO] Output: "0x0100072394c85d1fd822223ed0dec4cc583b946e80e4d983c928df4a604c53e0"
-08:29:45 [INFO] === Console Logs: 
-08:29:45 [INFO] === Call traces:
-08:29:45 [INFO] 
-08:29:45 [INFO] Executing [1m0xbd986a7e94eaea323ae077a7b8b43f9ee4fe30a9b419283960b2368e30180e53[0m
-08:29:45 [INFO] ┌─────────────────────────┐
-08:29:45 [INFO] │   TRANSACTION SUMMARY   │
-08:29:45 [INFO] └─────────────────────────┘
-08:29:45 [INFO] Transaction: [32mSUCCESS[0m
-08:29:45 [INFO] Initiator: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-08:29:45 [INFO] Payer: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-08:29:45 [INFO] Gas - Limit: 1_234_057 | Used: 875_975 | Refunded: 358_082
-08:29:45 [INFO] Use --show-gas-details flag or call config_setShowGasDetails to display more info
-08:29:45 [INFO] 
-08:29:45 [INFO] ==== Console logs: 
-08:29:45 [INFO] 
-08:29:45 [INFO] ==== [1m20 call traces. [0m Use --show-calls flag or call config_setShowCalls to display more info.
-08:29:45 [INFO] 
-08:29:45 [INFO] ==== [1m3 events[0m
-08:29:45 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x0000000000000000000000000000000000000000000000000000000000008001
-08:29:45 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x000000000000000000000000e1fbe156b66af69d6d813092f315576acf1d435d
-08:29:45 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x0000000000000000000000000000000000000000000000000000000000008001, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049
-08:29:45 [INFO] 
-08:29:45 [INFO] 
-08:29:45 [INFO] 
-08:29:45 [INFO] Executing [1m0xb2122a342de41da96f435221d57ce5a501e84f95e998f0a2b8c0f200cc0d5d91[0m
-08:29:45 [INFO] ┌─────────────────────────┐
-08:29:45 [INFO] │   TRANSACTION SUMMARY   │
-08:29:45 [INFO] └─────────────────────────┘
-08:29:45 [INFO] Transaction: [32mSUCCESS[0m
-08:29:45 [INFO] Initiator: 0xe1fbe156b66af69d6d813092f315576acf1d435d
-08:29:45 [INFO] Payer: 0xe1fbe156b66af69d6d813092f315576acf1d435d
-08:29:45 [INFO] Gas - Limit: 2_986_518 | Used: 2_124_290 | Refunded: 862_228
-08:29:45 [INFO] Use --show-gas-details flag or call config_setShowGasDetails to display more info
-08:29:45 [INFO] 
-08:29:45 [INFO] ==== Console logs: 
-08:29:45 [INFO] 
-08:29:45 [INFO] ==== [1m20 call traces. [0m Use --show-calls flag or call config_setShowCalls to display more info.
-08:29:45 [INFO] 
-08:29:45 [INFO] ==== [1m3 events[0m
-08:29:45 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x000000000000000000000000e1fbe156b66af69d6d813092f315576acf1d435d, 0x0000000000000000000000000000000000000000000000000000000000008001
-08:29:45 [INFO] [34mL2 deployer                               [0m 0x290afdae231a3fc0bbae8b1af63698b0a1d79b21ad17df0342dfb952fe74f8e5, 0x00000000000000000000000026b368c3ed16313ebd6660b72d8e4439a697cb0b, 0x0100072394c85d1fd822223ed0dec4cc583b946e80e4d983c928df4a604c53e0, 0x000000000000000000000000f2a950608908b40ffc3ad3b31b06e6e8a8f6fd89
-08:29:45 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x0000000000000000000000000000000000000000000000000000000000008001, 0x000000000000000000000000e1fbe156b66af69d6d813092f315576acf1d435d
-08:29:45 [INFO] 
-08:29:45 [INFO] 
-08:29:49 [INFO] 
-08:29:49 [INFO] Executing [1m0x8cb5394e53d62ab90625b5cc0569a37f54eb04b4034231e465c02860524e3a0d[0m
-08:29:49 [INFO] ┌─────────────────────────┐
-08:29:49 [INFO] │   TRANSACTION SUMMARY   │
-08:29:49 [INFO] └─────────────────────────┘
-08:29:49 [INFO] Transaction: [32mSUCCESS[0m
-08:29:49 [INFO] Initiator: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-08:29:49 [INFO] Payer: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-08:29:49 [INFO] Gas - Limit: 2_986_518 | Used: 2_054_192 | Refunded: 932_326
-08:29:49 [INFO] Use --show-gas-details flag or call config_setShowGasDetails to display more info
-08:29:49 [INFO] 
-08:29:49 [INFO] ==== Console logs: 
-08:29:49 [INFO] 
-08:29:49 [INFO] ==== [1m20 call traces. [0m Use --show-calls flag or call config_setShowCalls to display more info.
-08:29:49 [INFO] 
-08:29:49 [INFO] ==== [1m3 events[0m
-08:29:49 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x0000000000000000000000000000000000000000000000000000000000008001
-08:29:49 [INFO] [34mL2 deployer                               [0m 0x290afdae231a3fc0bbae8b1af63698b0a1d79b21ad17df0342dfb952fe74f8e5, 0x00000000000000000000000026b368c3ed16313ebd6660b72d8e4439a697cb0b, 0x0100072394c85d1fd822223ed0dec4cc583b946e80e4d983c928df4a604c53e0, 0x00000000000000000000000069d09ae7679764b14279f60d7edc76a51665b805
-08:29:49 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x0000000000000000000000000000000000000000000000000000000000008001, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049
-08:29:49 [INFO] 
-08:29:49 [INFO] 
-08:29:49 [INFO] Call: [32mSUCCESS[0m
-08:29:49 [INFO] Output: "0x0100072394c85d1fd822223ed0dec4cc583b946e80e4d983c928df4a604c53e0"
-08:29:49 [INFO] === Console Logs: 
-08:29:49 [INFO] === Call traces:
-08:29:49 [INFO] 
-08:29:49 [INFO] Executing [1m0x55670358d87319a2bf61a419ad5a19b55bb8a2d8d3f0a67b1c486bcf13f80547[0m
-08:29:49 [INFO] ┌─────────────────────────┐
-08:29:49 [INFO] │   TRANSACTION SUMMARY   │
-08:29:49 [INFO] └─────────────────────────┘
-08:29:49 [INFO] Transaction: [32mSUCCESS[0m
-08:29:49 [INFO] Initiator: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-08:29:49 [INFO] Payer: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-08:29:49 [INFO] Gas - Limit: 1_234_057 | Used: 875_975 | Refunded: 358_082
-08:29:49 [INFO] Use --show-gas-details flag or call config_setShowGasDetails to display more info
-08:29:49 [INFO] 
-08:29:49 [INFO] ==== Console logs: 
-08:29:49 [INFO] 
-08:29:49 [INFO] ==== [1m20 call traces. [0m Use --show-calls flag or call config_setShowCalls to display more info.
-08:29:49 [INFO] 
-08:29:49 [INFO] ==== [1m3 events[0m
-08:29:49 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x0000000000000000000000000000000000000000000000000000000000008001
-08:29:49 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x00000000000000000000000069d09ae7679764b14279f60d7edc76a51665b805
-08:29:49 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x0000000000000000000000000000000000000000000000000000000000008001, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049
-08:29:49 [INFO] 
-08:29:49 [INFO] 
-08:29:49 [INFO] 
-08:29:49 [INFO] Executing [1m0xd539e23494ae925d9f5138d16374a9fa0ce609c92067d561fc99a3e0eed8291b[0m
-08:29:49 [INFO] ┌─────────────────────────┐
-08:29:49 [INFO] │   TRANSACTION SUMMARY   │
-08:29:49 [INFO] └─────────────────────────┘
-08:29:49 [INFO] Transaction: [32mSUCCESS[0m
-08:29:49 [INFO] Initiator: 0x69d09ae7679764b14279f60d7edc76a51665b805
-08:29:49 [INFO] Payer: 0x69d09ae7679764b14279f60d7edc76a51665b805
-08:29:49 [INFO] Gas - Limit: 2_986_518 | Used: 2_124_290 | Refunded: 862_228
-08:29:49 [INFO] Use --show-gas-details flag or call config_setShowGasDetails to display more info
-08:29:49 [INFO] 
-08:29:49 [INFO] ==== Console logs: 
-08:29:49 [INFO] 
-08:29:49 [INFO] ==== [1m20 call traces. [0m Use --show-calls flag or call config_setShowCalls to display more info.
-08:29:49 [INFO] 
-08:29:49 [INFO] ==== [1m3 events[0m
-08:29:49 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x00000000000000000000000069d09ae7679764b14279f60d7edc76a51665b805, 0x0000000000000000000000000000000000000000000000000000000000008001
-08:29:49 [INFO] [34mL2 deployer                               [0m 0x290afdae231a3fc0bbae8b1af63698b0a1d79b21ad17df0342dfb952fe74f8e5, 0x00000000000000000000000026b368c3ed16313ebd6660b72d8e4439a697cb0b, 0x0100072394c85d1fd822223ed0dec4cc583b946e80e4d983c928df4a604c53e0, 0x000000000000000000000000fccd1c18408048ec320de39d3f5c4ad6b6af5f87
-08:29:49 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x0000000000000000000000000000000000000000000000000000000000008001, 0x00000000000000000000000069d09ae7679764b14279f60d7edc76a51665b805
-08:29:49 [INFO] 
-08:29:49 [INFO] 
-09:14:37 [INFO] 
-09:14:37 [INFO] Executing [1m0x94a76b273413ff63055cb7543993a390c8845fe646b40352d2c6bb28f3cb175b[0m
-09:14:37 [INFO] ┌─────────────────────────┐
-09:14:37 [INFO] │   TRANSACTION SUMMARY   │
-09:14:37 [INFO] └─────────────────────────┘
-09:14:37 [INFO] Transaction: [32mSUCCESS[0m
-09:14:37 [INFO] Initiator: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-09:14:37 [INFO] Payer: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-09:14:37 [INFO] Gas - Limit: 189_513_742 | Used: 156_466_293 | Refunded: 33_047_449
-09:14:37 [INFO] Use --show-gas-details flag or call config_setShowGasDetails to display more info
-09:14:37 [INFO] 
-09:14:37 [INFO] ==== Console logs: 
-09:14:37 [INFO] 
-09:14:37 [INFO] ==== [1m24 call traces. [0m Use --show-calls flag or call config_setShowCalls to display more info.
-09:14:37 [INFO] 
-09:14:37 [INFO] ==== [1m7 events[0m
-09:14:37 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x0000000000000000000000000000000000000000000000000000000000008001
-09:14:37 [INFO] [34mL1 messenger                              [0m 0x3a36e47291f4201faf137fab081d92295bce2d53be2c6ca68ba82c7faa9ce241, 0x000000000000000000000000000000000000000000000000000000000000800e, 0x3423c6684a455c82a9a5f6183cfe4b054fd240c9593b2d311e73bf1137ac0a91
-09:14:37 [INFO] [34mKnown code storage                        [0m 0xc94722ff13eacf53547c4741dab5228353a05938ffcdd5d4a2d533ae0e618287, 0x010006eb6ed996f958ce1bc01f5995a87a99a7fff63f280049217776f846d3b6, 0x0000000000000000000000000000000000000000000000000000000000000000
-09:14:37 [INFO] [34mL1 messenger                              [0m 0x3a36e47291f4201faf137fab081d92295bce2d53be2c6ca68ba82c7faa9ce241, 0x000000000000000000000000000000000000000000000000000000000000800e, 0xb9696ce22e9b49b19ce30bb67ca2853f2ce34d627e7f524c05ea92306c11851c
-09:14:37 [INFO] [34mKnown code storage                        [0m 0xc94722ff13eacf53547c4741dab5228353a05938ffcdd5d4a2d533ae0e618287, 0x0100007b0774a8ce452b11f901fd81808dee2998146aedb800515af1e159aaf3, 0x0000000000000000000000000000000000000000000000000000000000000000
-09:14:37 [INFO] [34mL2 deployer                               [0m 0x290afdae231a3fc0bbae8b1af63698b0a1d79b21ad17df0342dfb952fe74f8e5, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x0100007b0774a8ce452b11f901fd81808dee2998146aedb800515af1e159aaf3, 0x000000000000000000000000094499df5ee555ffc33af07862e43c90e6fee501
-09:14:37 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x0000000000000000000000000000000000000000000000000000000000008001, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049
-09:14:37 [INFO] 
-09:14:37 [INFO] 
-09:15:02 [INFO] 
-09:15:02 [INFO] Executing [1m0xef44c6965c493200d7ab460df81dcc9f4f4398ed1eba3ee53a06baa630a4f971[0m
-09:15:02 [INFO] ┌─────────────────────────┐
-09:15:02 [INFO] │   TRANSACTION SUMMARY   │
-09:15:02 [INFO] └─────────────────────────┘
-09:15:02 [INFO] Transaction: [32mSUCCESS[0m
-09:15:02 [INFO] Initiator: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-09:15:02 [INFO] Payer: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-09:15:02 [INFO] Gas - Limit: 2_689_106 | Used: 1_854_335 | Refunded: 834_771
-09:15:02 [INFO] Use --show-gas-details flag or call config_setShowGasDetails to display more info
-09:15:02 [INFO] 
-09:15:02 [INFO] ==== Console logs: 
-09:15:02 [INFO] 
-09:15:02 [INFO] ==== [1m20 call traces. [0m Use --show-calls flag or call config_setShowCalls to display more info.
-09:15:02 [INFO] 
-09:15:02 [INFO] ==== [1m3 events[0m
-09:15:02 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x0000000000000000000000000000000000000000000000000000000000008001
-09:15:02 [INFO] [34mL2 deployer                               [0m 0x290afdae231a3fc0bbae8b1af63698b0a1d79b21ad17df0342dfb952fe74f8e5, 0x000000000000000000000000094499df5ee555ffc33af07862e43c90e6fee501, 0x010006eb6ed996f958ce1bc01f5995a87a99a7fff63f280049217776f846d3b6, 0x0000000000000000000000002b8b6e1a3eb286201bed1b66f6e786891876481b
-09:15:02 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x0000000000000000000000000000000000000000000000000000000000008001, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049
-09:15:02 [INFO] 
-09:15:02 [INFO] 
-09:15:02 [INFO] Call: [32mSUCCESS[0m
-09:15:02 [INFO] Output: "0x010006eb6ed996f958ce1bc01f5995a87a99a7fff63f280049217776f846d3b6"
-09:15:02 [INFO] === Console Logs: 
-09:15:02 [INFO] === Call traces:
-09:15:02 [INFO] 
-09:15:02 [INFO] Executing [1m0x9cb5cf204834cd68a986ba5f07233f1abf5e226e4ca28db3e9ca08ae3e45b863[0m
-09:15:02 [INFO] ┌─────────────────────────┐
-09:15:02 [INFO] │   TRANSACTION SUMMARY   │
-09:15:02 [INFO] └─────────────────────────┘
-09:15:02 [INFO] Transaction: [32mSUCCESS[0m
-09:15:02 [INFO] Initiator: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-09:15:02 [INFO] Payer: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-09:15:02 [INFO] Gas - Limit: 1_233_024 | Used: 868_460 | Refunded: 364_564
-09:15:02 [INFO] Use --show-gas-details flag or call config_setShowGasDetails to display more info
-09:15:02 [INFO] 
-09:15:02 [INFO] ==== Console logs: 
-09:15:02 [INFO] 
-09:15:02 [INFO] ==== [1m20 call traces. [0m Use --show-calls flag or call config_setShowCalls to display more info.
-09:15:02 [INFO] 
-09:15:02 [INFO] ==== [1m3 events[0m
-09:15:02 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x0000000000000000000000000000000000000000000000000000000000008001
-09:15:02 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x00000000000000000000000030ff13ea8ed6adee3f3dc38613b198d890c4be7f
-09:15:02 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x0000000000000000000000000000000000000000000000000000000000008001, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049
-09:15:02 [INFO] 
-09:15:02 [INFO] 
-09:15:02 [INFO] 
-09:15:02 [INFO] Executing [1m0xfc900eb6c648d3dae0dc7bdf1f453209d50d99fb06d9b3804889ab5f5ab257e6[0m
-09:15:02 [INFO] ┌─────────────────────────┐
-09:15:02 [INFO] │   TRANSACTION SUMMARY   │
-09:15:02 [INFO] └─────────────────────────┘
-09:15:02 [INFO] Transaction: [31mHALTED[0m
-09:15:02 [INFO] Initiator: 0x30ff13ea8ed6adee3f3dc38613b198d890c4be7f
-09:15:02 [INFO] Payer: 0x30ff13ea8ed6adee3f3dc38613b198d890c4be7f
-09:15:02 [INFO] Gas - Limit: 2_515_614 | Used: 2_515_614 | Refunded: 0
-09:15:02 [INFO] Use --show-gas-details flag or call config_setShowGasDetails to display more info
-09:15:02 [INFO] 
-09:15:02 [INFO] ==== Console logs: 
-09:15:02 [INFO] 
-09:15:02 [INFO] ==== [1m10 call traces. [0m Use --show-calls flag or call config_setShowCalls to display more info.
-09:15:02 [INFO] 
-09:15:02 [INFO] ==== [1m0 events[0m
-09:15:02 [INFO] 
-09:15:02 [INFO] 
-09:19:06 [INFO] 
-09:19:06 [INFO] Executing [1m0x77559336cf802225a1eaf155c80823be95f3b1979cebd30adafbf4b9d9335f29[0m
-09:19:06 [INFO] ┌─────────────────────────┐
-09:19:06 [INFO] │   TRANSACTION SUMMARY   │
-09:19:06 [INFO] └─────────────────────────┘
-09:19:06 [INFO] Transaction: [32mSUCCESS[0m
-09:19:06 [INFO] Initiator: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-09:19:06 [INFO] Payer: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-09:19:06 [INFO] Gas - Limit: 21_822_291 | Used: 17_437_589 | Refunded: 4_384_702
-09:19:06 [INFO] Use --show-gas-details flag or call config_setShowGasDetails to display more info
-09:19:06 [INFO] 
-09:19:06 [INFO] ==== Console logs: 
-09:19:06 [INFO] 
-09:19:06 [INFO] ==== [1m22 call traces. [0m Use --show-calls flag or call config_setShowCalls to display more info.
-09:19:06 [INFO] 
-09:19:06 [INFO] ==== [1m5 events[0m
-09:19:06 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x0000000000000000000000000000000000000000000000000000000000008001
-09:19:06 [INFO] [34mL1 messenger                              [0m 0x3a36e47291f4201faf137fab081d92295bce2d53be2c6ca68ba82c7faa9ce241, 0x000000000000000000000000000000000000000000000000000000000000800e, 0x0e789c369c4ccd3f2a95422e24a44fd81d6891ba25c23b9f314f0847a5352dee
-09:19:06 [INFO] [34mKnown code storage                        [0m 0xc94722ff13eacf53547c4741dab5228353a05938ffcdd5d4a2d533ae0e618287, 0x01000079f354bbb955812079210c8ad285159a1fccc3422cf4005b07822f5692, 0x0000000000000000000000000000000000000000000000000000000000000000
-09:19:06 [INFO] [34mL2 deployer                               [0m 0x290afdae231a3fc0bbae8b1af63698b0a1d79b21ad17df0342dfb952fe74f8e5, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x01000079f354bbb955812079210c8ad285159a1fccc3422cf4005b07822f5692, 0x000000000000000000000000b76ed02dea1ba444609602be5d587c4bffd67153
-09:19:06 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x0000000000000000000000000000000000000000000000000000000000008001, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049
-09:19:06 [INFO] 
-09:19:06 [INFO] 
-09:19:22 [INFO] 
-09:19:22 [INFO] Executing [1m0x55037f3527bc6be8ebea7da6aea4c3a2cc0adb51fa7046798445884299ba9504[0m
-09:19:22 [INFO] ┌─────────────────────────┐
-09:19:22 [INFO] │   TRANSACTION SUMMARY   │
-09:19:22 [INFO] └─────────────────────────┘
-09:19:22 [INFO] Transaction: [32mSUCCESS[0m
-09:19:22 [INFO] Initiator: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-09:19:22 [INFO] Payer: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-09:19:22 [INFO] Gas - Limit: 2_689_106 | Used: 1_853_908 | Refunded: 835_198
-09:19:22 [INFO] Use --show-gas-details flag or call config_setShowGasDetails to display more info
-09:19:22 [INFO] 
-09:19:22 [INFO] ==== Console logs: 
-09:19:22 [INFO] 
-09:19:22 [INFO] ==== [1m20 call traces. [0m Use --show-calls flag or call config_setShowCalls to display more info.
-09:19:22 [INFO] 
-09:19:22 [INFO] ==== [1m3 events[0m
-09:19:22 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x0000000000000000000000000000000000000000000000000000000000008001
-09:19:22 [INFO] [34mL2 deployer                               [0m 0x290afdae231a3fc0bbae8b1af63698b0a1d79b21ad17df0342dfb952fe74f8e5, 0x000000000000000000000000b76ed02dea1ba444609602be5d587c4bffd67153, 0x010006eb6ed996f958ce1bc01f5995a87a99a7fff63f280049217776f846d3b6, 0x0000000000000000000000000d5a65cf7f82ef9697e118628987c1100aaa59a5
-09:19:22 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x0000000000000000000000000000000000000000000000000000000000008001, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049
-09:19:22 [INFO] 
-09:19:22 [INFO] 
-09:19:45 [INFO] 
-09:19:45 [INFO] Executing [1m0xc1b4f6a5f9a2b50a17be6ea5d88c2b60c4cc5d4c4173bf1b19b35cb590197384[0m
-09:19:45 [INFO] ┌─────────────────────────┐
-09:19:45 [INFO] │   TRANSACTION SUMMARY   │
-09:19:45 [INFO] └─────────────────────────┘
-09:19:45 [INFO] Transaction: [32mSUCCESS[0m
-09:19:45 [INFO] Initiator: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-09:19:45 [INFO] Payer: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-09:19:45 [INFO] Gas - Limit: 2_514_582 | Used: 1_737_236 | Refunded: 777_346
-09:19:45 [INFO] Use --show-gas-details flag or call config_setShowGasDetails to display more info
-09:19:45 [INFO] 
-09:19:45 [INFO] ==== Console logs: 
-09:19:45 [INFO] 
-09:19:45 [INFO] ==== [1m20 call traces. [0m Use --show-calls flag or call config_setShowCalls to display more info.
-09:19:45 [INFO] 
-09:19:45 [INFO] ==== [1m3 events[0m
-09:19:45 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x0000000000000000000000000000000000000000000000000000000000008001
-09:19:45 [INFO] [34mL2 deployer                               [0m 0x290afdae231a3fc0bbae8b1af63698b0a1d79b21ad17df0342dfb952fe74f8e5, 0x000000000000000000000000b76ed02dea1ba444609602be5d587c4bffd67153, 0x010006eb6ed996f958ce1bc01f5995a87a99a7fff63f280049217776f846d3b6, 0x0000000000000000000000004794b2321f1bb5b07864d838233d6e39df175312
-09:19:45 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x0000000000000000000000000000000000000000000000000000000000008001, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049
-09:19:45 [INFO] 
-09:19:45 [INFO] 
-09:19:45 [INFO] Call: [32mSUCCESS[0m
-09:19:45 [INFO] Output: "0x010006eb6ed996f958ce1bc01f5995a87a99a7fff63f280049217776f846d3b6"
-09:19:45 [INFO] === Console Logs: 
-09:19:45 [INFO] === Call traces:
-09:21:15 [INFO] 
-09:21:15 [INFO] Executing [1m0x04b409d3298ae922989d5fff85ab44d40b3b9256b665346bcee85999a4395506[0m
-09:21:15 [INFO] ┌─────────────────────────┐
-09:21:15 [INFO] │   TRANSACTION SUMMARY   │
-09:21:15 [INFO] └─────────────────────────┘
-09:21:15 [INFO] Transaction: [32mSUCCESS[0m
-09:21:15 [INFO] Initiator: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-09:21:15 [INFO] Payer: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-09:21:15 [INFO] Gas - Limit: 2_514_582 | Used: 1_737_236 | Refunded: 777_346
-09:21:15 [INFO] Use --show-gas-details flag or call config_setShowGasDetails to display more info
-09:21:15 [INFO] 
-09:21:15 [INFO] ==== Console logs: 
-09:21:15 [INFO] 
-09:21:15 [INFO] ==== [1m20 call traces. [0m Use --show-calls flag or call config_setShowCalls to display more info.
-09:21:15 [INFO] 
-09:21:15 [INFO] ==== [1m3 events[0m
-09:21:15 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x0000000000000000000000000000000000000000000000000000000000008001
-09:21:15 [INFO] [34mL2 deployer                               [0m 0x290afdae231a3fc0bbae8b1af63698b0a1d79b21ad17df0342dfb952fe74f8e5, 0x000000000000000000000000b76ed02dea1ba444609602be5d587c4bffd67153, 0x010006eb6ed996f958ce1bc01f5995a87a99a7fff63f280049217776f846d3b6, 0x0000000000000000000000000b1e02b314c89597c5b077965b001560388c8f09
-09:21:15 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x0000000000000000000000000000000000000000000000000000000000008001, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049
-09:21:15 [INFO] 
-09:21:15 [INFO] 
-09:21:15 [INFO] Call: [32mSUCCESS[0m
-09:21:15 [INFO] Output: "0x010006eb6ed996f958ce1bc01f5995a87a99a7fff63f280049217776f846d3b6"
-09:21:15 [INFO] === Console Logs: 
-09:21:15 [INFO] === Call traces:
-09:21:16 [INFO] 
-09:21:16 [INFO] Executing [1m0xe337251947074357e1e4595c0d20f07269960fd6df5fe01fee40bdc71227f017[0m
-09:21:16 [INFO] ┌─────────────────────────┐
-09:21:16 [INFO] │   TRANSACTION SUMMARY   │
-09:21:16 [INFO] └─────────────────────────┘
-09:21:16 [INFO] Transaction: [32mSUCCESS[0m
-09:21:16 [INFO] Initiator: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-09:21:16 [INFO] Payer: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-09:21:16 [INFO] Gas - Limit: 1_234_057 | Used: 875_751 | Refunded: 358_306
-09:21:16 [INFO] Use --show-gas-details flag or call config_setShowGasDetails to display more info
-09:21:16 [INFO] 
-09:21:16 [INFO] ==== Console logs: 
-09:21:16 [INFO] 
-09:21:16 [INFO] ==== [1m20 call traces. [0m Use --show-calls flag or call config_setShowCalls to display more info.
-09:21:16 [INFO] 
-09:21:16 [INFO] ==== [1m3 events[0m
-09:21:16 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x0000000000000000000000000000000000000000000000000000000000008001
-09:21:16 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x0000000000000000000000000b1e02b314c89597c5b077965b001560388c8f09
-09:21:16 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x0000000000000000000000000000000000000000000000000000000000008001, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049
-09:21:16 [INFO] 
-09:21:16 [INFO] 
-09:21:16 [INFO] 
-09:21:16 [INFO] Executing [1m0x19ae92be10da5740bcd3944efc9d22e33a5b3087849c163281771ed55836e0fa[0m
-09:21:16 [INFO] ┌─────────────────────────┐
-09:21:16 [INFO] │   TRANSACTION SUMMARY   │
-09:21:16 [INFO] └─────────────────────────┘
-09:21:16 [INFO] Transaction: [31mHALTED[0m
-09:21:16 [INFO] Initiator: 0x0b1e02b314c89597c5b077965b001560388c8f09
-09:21:16 [INFO] Payer: 0x0b1e02b314c89597c5b077965b001560388c8f09
-09:21:16 [INFO] Gas - Limit: 2_514_582 | Used: 2_514_582 | Refunded: 0
-09:21:16 [INFO] Use --show-gas-details flag or call config_setShowGasDetails to display more info
-09:21:16 [INFO] 
-09:21:16 [INFO] ==== Console logs: 
-09:21:16 [INFO] 
-09:21:16 [INFO] ==== [1m10 call traces. [0m Use --show-calls flag or call config_setShowCalls to display more info.
-09:21:16 [INFO] 
-09:21:16 [INFO] ==== [1m0 events[0m
-09:21:16 [INFO] 
-09:21:16 [INFO] 
-09:22:25 [INFO] 
-09:22:25 [INFO] Executing [1m0xc57eeddf2a204f450b53c386134034b351b44ea3f299865dd8fddb2856b7771f[0m
-09:22:25 [INFO] ┌─────────────────────────┐
-09:22:25 [INFO] │   TRANSACTION SUMMARY   │
-09:22:25 [INFO] └─────────────────────────┘
-09:22:25 [INFO] Transaction: [32mSUCCESS[0m
-09:22:25 [INFO] Initiator: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-09:22:25 [INFO] Payer: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-09:22:25 [INFO] Gas - Limit: 2_514_582 | Used: 1_737_236 | Refunded: 777_346
-09:22:25 [INFO] Use --show-gas-details flag or call config_setShowGasDetails to display more info
-09:22:25 [INFO] 
-09:22:25 [INFO] ==== Console logs: 
-09:22:25 [INFO] 
-09:22:25 [INFO] ==== [1m20 call traces. [0m Use --show-calls flag or call config_setShowCalls to display more info.
-09:22:25 [INFO] 
-09:22:25 [INFO] ==== [1m3 events[0m
-09:22:25 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x0000000000000000000000000000000000000000000000000000000000008001
-09:22:25 [INFO] [34mL2 deployer                               [0m 0x290afdae231a3fc0bbae8b1af63698b0a1d79b21ad17df0342dfb952fe74f8e5, 0x000000000000000000000000b76ed02dea1ba444609602be5d587c4bffd67153, 0x010006eb6ed996f958ce1bc01f5995a87a99a7fff63f280049217776f846d3b6, 0x0000000000000000000000004a4a4e31c151bc91326631f009a496f7da930aa1
-09:22:25 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x0000000000000000000000000000000000000000000000000000000000008001, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049
-09:22:25 [INFO] 
-09:22:25 [INFO] 
-09:22:25 [INFO] Call: [32mSUCCESS[0m
-09:22:25 [INFO] Output: "0x010006eb6ed996f958ce1bc01f5995a87a99a7fff63f280049217776f846d3b6"
-09:22:25 [INFO] === Console Logs: 
-09:22:25 [INFO] === Call traces:
-09:22:25 [INFO] 
-09:22:25 [INFO] Executing [1m0x0b28ec375d04dd9f224b39f84edcfa1699a1e2e8571783648ed628992cb522ac[0m
-09:22:25 [INFO] ┌─────────────────────────┐
-09:22:25 [INFO] │   TRANSACTION SUMMARY   │
-09:22:25 [INFO] └─────────────────────────┘
-09:22:25 [INFO] Transaction: [32mSUCCESS[0m
-09:22:25 [INFO] Initiator: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-09:22:25 [INFO] Payer: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-09:22:25 [INFO] Gas - Limit: 1_234_057 | Used: 875_751 | Refunded: 358_306
-09:22:25 [INFO] Use --show-gas-details flag or call config_setShowGasDetails to display more info
-09:22:25 [INFO] 
-09:22:25 [INFO] ==== Console logs: 
-09:22:25 [INFO] 
-09:22:25 [INFO] ==== [1m20 call traces. [0m Use --show-calls flag or call config_setShowCalls to display more info.
-09:22:25 [INFO] 
-09:22:25 [INFO] ==== [1m3 events[0m
-09:22:25 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x0000000000000000000000000000000000000000000000000000000000008001
-09:22:25 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x0000000000000000000000004a4a4e31c151bc91326631f009a496f7da930aa1
-09:22:25 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x0000000000000000000000000000000000000000000000000000000000008001, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049
-09:22:25 [INFO] 
-09:22:25 [INFO] 
-09:22:25 [INFO] 
-09:22:25 [INFO] Executing [1m0xaa26f31ba6e77f638f9f1b8e28e8ce042db506c0b1f6a3ad81808b8aee029b04[0m
-09:22:25 [INFO] ┌─────────────────────────┐
-09:22:25 [INFO] │   TRANSACTION SUMMARY   │
-09:22:25 [INFO] └─────────────────────────┘
-09:22:25 [INFO] Transaction: [31mHALTED[0m
-09:22:25 [INFO] Initiator: 0x4a4a4e31c151bc91326631f009a496f7da930aa1
-09:22:25 [INFO] Payer: 0x4a4a4e31c151bc91326631f009a496f7da930aa1
-09:22:25 [INFO] Gas - Limit: 2_514_582 | Used: 2_514_582 | Refunded: 0
-09:22:25 [INFO] Use --show-gas-details flag or call config_setShowGasDetails to display more info
-09:22:25 [INFO] 
-09:22:25 [INFO] ==== Console logs: 
-09:22:25 [INFO] 
-09:22:25 [INFO] ==== [1m10 call traces. [0m Use --show-calls flag or call config_setShowCalls to display more info.
-09:22:25 [INFO] 
-09:22:25 [INFO] ==== [1m0 events[0m
-09:22:25 [INFO] 
-09:22:25 [INFO] 
-09:28:02 [INFO] 
-09:28:02 [INFO] Executing [1m0x7245ada23824a98ae129949cfc5745b8e599f282909647db499fe08f89e9d417[0m
-09:28:02 [INFO] ┌─────────────────────────┐
-09:28:02 [INFO] │   TRANSACTION SUMMARY   │
-09:28:02 [INFO] └─────────────────────────┘
-09:28:02 [INFO] Transaction: [32mSUCCESS[0m
-09:28:02 [INFO] Initiator: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-09:28:02 [INFO] Payer: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-09:28:02 [INFO] Gas - Limit: 2_514_582 | Used: 1_737_236 | Refunded: 777_346
-09:28:02 [INFO] Use --show-gas-details flag or call config_setShowGasDetails to display more info
-09:28:02 [INFO] 
-09:28:02 [INFO] ==== Console logs: 
-09:28:02 [INFO] 
-09:28:02 [INFO] ==== [1m20 call traces. [0m Use --show-calls flag or call config_setShowCalls to display more info.
-09:28:02 [INFO] 
-09:28:02 [INFO] ==== [1m3 events[0m
-09:28:02 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x0000000000000000000000000000000000000000000000000000000000008001
-09:28:02 [INFO] [34mL2 deployer                               [0m 0x290afdae231a3fc0bbae8b1af63698b0a1d79b21ad17df0342dfb952fe74f8e5, 0x000000000000000000000000b76ed02dea1ba444609602be5d587c4bffd67153, 0x010006eb6ed996f958ce1bc01f5995a87a99a7fff63f280049217776f846d3b6, 0x000000000000000000000000f49cced8672b42b9c245154bcbcc903e52ce73b7
-09:28:02 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x0000000000000000000000000000000000000000000000000000000000008001, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049
-09:28:02 [INFO] 
-09:28:02 [INFO] 
-09:28:02 [INFO] Call: [32mSUCCESS[0m
-09:28:02 [INFO] Output: "0x010006eb6ed996f958ce1bc01f5995a87a99a7fff63f280049217776f846d3b6"
-09:28:02 [INFO] === Console Logs: 
-09:28:02 [INFO] === Call traces:
-09:28:02 [INFO] 
-09:28:02 [INFO] Executing [1m0xa1be3a134227f70069bfb68982e614badad4193c7f1b6f1d4685fecd6c9902c1[0m
-09:28:02 [INFO] ┌─────────────────────────┐
-09:28:02 [INFO] │   TRANSACTION SUMMARY   │
-09:28:02 [INFO] └─────────────────────────┘
-09:28:02 [INFO] Transaction: [32mSUCCESS[0m
-09:28:02 [INFO] Initiator: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-09:28:02 [INFO] Payer: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-09:28:02 [INFO] Gas - Limit: 1_234_057 | Used: 875_751 | Refunded: 358_306
-09:28:02 [INFO] Use --show-gas-details flag or call config_setShowGasDetails to display more info
-09:28:02 [INFO] 
-09:28:02 [INFO] ==== Console logs: 
-09:28:02 [INFO] 
-09:28:02 [INFO] ==== [1m20 call traces. [0m Use --show-calls flag or call config_setShowCalls to display more info.
-09:28:02 [INFO] 
-09:28:02 [INFO] ==== [1m3 events[0m
-09:28:02 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x0000000000000000000000000000000000000000000000000000000000008001
-09:28:02 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x000000000000000000000000f49cced8672b42b9c245154bcbcc903e52ce73b7
-09:28:02 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x0000000000000000000000000000000000000000000000000000000000008001, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049
-09:28:02 [INFO] 
-09:28:02 [INFO] 
-09:28:02 [INFO] 
-09:28:02 [INFO] Executing [1m0xe127d99d80ac5fe0ccb2c15aa1ce08b9ca6bbef3f0eb0f2c7a8f2fcaf12c1984[0m
-09:28:02 [INFO] ┌─────────────────────────┐
-09:28:02 [INFO] │   TRANSACTION SUMMARY   │
-09:28:02 [INFO] └─────────────────────────┘
-09:28:02 [INFO] Transaction: [31mHALTED[0m
-09:28:02 [INFO] Initiator: 0xf49cced8672b42b9c245154bcbcc903e52ce73b7
-09:28:02 [INFO] Payer: 0xf49cced8672b42b9c245154bcbcc903e52ce73b7
-09:28:02 [INFO] Gas - Limit: 2_514_582 | Used: 2_514_582 | Refunded: 0
-09:28:02 [INFO] Use --show-gas-details flag or call config_setShowGasDetails to display more info
-09:28:02 [INFO] 
-09:28:02 [INFO] ==== Console logs: 
-09:28:02 [INFO] 
-09:28:02 [INFO] ==== [1m10 call traces. [0m Use --show-calls flag or call config_setShowCalls to display more info.
-09:28:02 [INFO] 
-09:28:02 [INFO] ==== [1m0 events[0m
-09:28:02 [INFO] 
-09:28:02 [INFO] 
-09:30:01 [INFO] 
-09:30:01 [INFO] Executing [1m0xeac59cece6c600128677318c825ded5d1a6d0f0bd12f7ac4a8733a8b7ba97ef3[0m
-09:30:01 [INFO] ┌─────────────────────────┐
-09:30:01 [INFO] │   TRANSACTION SUMMARY   │
-09:30:01 [INFO] └─────────────────────────┘
-09:30:01 [INFO] Transaction: [32mSUCCESS[0m
-09:30:01 [INFO] Initiator: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-09:30:01 [INFO] Payer: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-09:30:01 [INFO] Gas - Limit: 2_514_582 | Used: 1_737_236 | Refunded: 777_346
-09:30:01 [INFO] Use --show-gas-details flag or call config_setShowGasDetails to display more info
-09:30:01 [INFO] 
-09:30:01 [INFO] ==== Console logs: 
-09:30:01 [INFO] 
-09:30:01 [INFO] ==== [1m20 call traces. [0m Use --show-calls flag or call config_setShowCalls to display more info.
-09:30:01 [INFO] 
-09:30:01 [INFO] ==== [1m3 events[0m
-09:30:01 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x0000000000000000000000000000000000000000000000000000000000008001
-09:30:01 [INFO] [34mL2 deployer                               [0m 0x290afdae231a3fc0bbae8b1af63698b0a1d79b21ad17df0342dfb952fe74f8e5, 0x000000000000000000000000b76ed02dea1ba444609602be5d587c4bffd67153, 0x010006eb6ed996f958ce1bc01f5995a87a99a7fff63f280049217776f846d3b6, 0x000000000000000000000000758dc9adfa2ca78a9b0b76d9f625ce4d52e7e80a
-09:30:01 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x0000000000000000000000000000000000000000000000000000000000008001, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049
-09:30:01 [INFO] 
-09:30:01 [INFO] 
-09:30:01 [INFO] Call: [32mSUCCESS[0m
-09:30:01 [INFO] Output: "0x010006eb6ed996f958ce1bc01f5995a87a99a7fff63f280049217776f846d3b6"
-09:30:01 [INFO] === Console Logs: 
-09:30:01 [INFO] === Call traces:
-09:30:01 [INFO] 
-09:30:01 [INFO] Executing [1m0x6453341a5d34fcf59db88fd293d4e69e2ae754b20ff009a6a197a47f3eb35099[0m
-09:30:01 [INFO] ┌─────────────────────────┐
-09:30:01 [INFO] │   TRANSACTION SUMMARY   │
-09:30:01 [INFO] └─────────────────────────┘
-09:30:01 [INFO] Transaction: [32mSUCCESS[0m
-09:30:01 [INFO] Initiator: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-09:30:01 [INFO] Payer: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-09:30:01 [INFO] Gas - Limit: 1_234_057 | Used: 875_751 | Refunded: 358_306
-09:30:01 [INFO] Use --show-gas-details flag or call config_setShowGasDetails to display more info
-09:30:01 [INFO] 
-09:30:01 [INFO] ==== Console logs: 
-09:30:01 [INFO] 
-09:30:01 [INFO] ==== [1m20 call traces. [0m Use --show-calls flag or call config_setShowCalls to display more info.
-09:30:01 [INFO] 
-09:30:01 [INFO] ==== [1m3 events[0m
-09:30:01 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x0000000000000000000000000000000000000000000000000000000000008001
-09:30:01 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x000000000000000000000000758dc9adfa2ca78a9b0b76d9f625ce4d52e7e80a
-09:30:01 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x0000000000000000000000000000000000000000000000000000000000008001, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049
-09:30:01 [INFO] 
-09:30:01 [INFO] 
-09:40:05 [INFO] 
-09:40:05 [INFO] Executing [1m0xea862bced0c9043a6795bedba513ef402f4028db0e15eb7f9a5788b7e00d4819[0m
-09:40:05 [INFO] ┌─────────────────────────┐
-09:40:05 [INFO] │   TRANSACTION SUMMARY   │
-09:40:05 [INFO] └─────────────────────────┘
-09:40:05 [INFO] Transaction: [32mSUCCESS[0m
-09:40:05 [INFO] Initiator: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-09:40:05 [INFO] Payer: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-09:40:05 [INFO] Gas - Limit: 2_182_059 | Used: 1_300_276 | Refunded: 881_783
-09:40:05 [INFO] Use --show-gas-details flag or call config_setShowGasDetails to display more info
-09:40:05 [INFO] 
-09:40:05 [INFO] ==== Console logs: 
-09:40:05 [INFO] 
-09:40:05 [INFO] ==== [1m20 call traces. [0m Use --show-calls flag or call config_setShowCalls to display more info.
-09:40:05 [INFO] 
-09:40:05 [INFO] ==== [1m3 events[0m
-09:40:05 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x0000000000000000000000000000000000000000000000000000000000008001
-09:40:05 [INFO] [34mL2 deployer                               [0m 0x290afdae231a3fc0bbae8b1af63698b0a1d79b21ad17df0342dfb952fe74f8e5, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x01000079f354bbb955812079210c8ad285159a1fccc3422cf4005b07822f5692, 0x000000000000000000000000f2fcc18ed5072b48c0a076693eca72fe840b3981
-09:40:05 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x0000000000000000000000000000000000000000000000000000000000008001, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049
-09:40:05 [INFO] 
-09:40:05 [INFO] 
-09:40:26 [INFO] 
-09:40:26 [INFO] Executing [1m0xd63ae714f61d6fd6d458d7c5898d0ea091bbf691b91a3126d0eb0e8804ed49a4[0m
-09:40:26 [INFO] ┌─────────────────────────┐
-09:40:26 [INFO] │   TRANSACTION SUMMARY   │
-09:40:26 [INFO] └─────────────────────────┘
-09:40:26 [INFO] Transaction: [32mSUCCESS[0m
-09:40:26 [INFO] Initiator: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-09:40:26 [INFO] Payer: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-09:40:26 [INFO] Gas - Limit: 2_689_106 | Used: 1_853_908 | Refunded: 835_198
-09:40:26 [INFO] Use --show-gas-details flag or call config_setShowGasDetails to display more info
-09:40:26 [INFO] 
-09:40:26 [INFO] ==== Console logs: 
-09:40:26 [INFO] 
-09:40:26 [INFO] ==== [1m20 call traces. [0m Use --show-calls flag or call config_setShowCalls to display more info.
-09:40:26 [INFO] 
-09:40:26 [INFO] ==== [1m3 events[0m
-09:40:26 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x0000000000000000000000000000000000000000000000000000000000008001
-09:40:26 [INFO] [34mL2 deployer                               [0m 0x290afdae231a3fc0bbae8b1af63698b0a1d79b21ad17df0342dfb952fe74f8e5, 0x000000000000000000000000f2fcc18ed5072b48c0a076693eca72fe840b3981, 0x010006eb6ed996f958ce1bc01f5995a87a99a7fff63f280049217776f846d3b6, 0x00000000000000000000000012e9185cb4097f7595d024148342abf2b9ad37a2
-09:40:26 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x0000000000000000000000000000000000000000000000000000000000008001, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049
-09:40:26 [INFO] 
-09:40:26 [INFO] 
-09:40:26 [INFO] Call: [32mSUCCESS[0m
-09:40:26 [INFO] Output: "0x010006eb6ed996f958ce1bc01f5995a87a99a7fff63f280049217776f846d3b6"
-09:40:26 [INFO] === Console Logs: 
-09:40:26 [INFO] === Call traces:
-09:40:26 [INFO] 
-09:40:26 [INFO] Executing [1m0xf9107e072b43dca3b938add8c3084d9ac7b57284ee23378cbb3b65eadbd89238[0m
-09:40:26 [INFO] ┌─────────────────────────┐
-09:40:26 [INFO] │   TRANSACTION SUMMARY   │
-09:40:26 [INFO] └─────────────────────────┘
-09:40:26 [INFO] Transaction: [32mSUCCESS[0m
-09:40:26 [INFO] Initiator: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-09:40:26 [INFO] Payer: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
-09:40:26 [INFO] Gas - Limit: 1_234_057 | Used: 875_751 | Refunded: 358_306
-09:40:26 [INFO] Use --show-gas-details flag or call config_setShowGasDetails to display more info
-09:40:26 [INFO] 
-09:40:26 [INFO] ==== Console logs: 
-09:40:26 [INFO] 
-09:40:26 [INFO] ==== [1m20 call traces. [0m Use --show-calls flag or call config_setShowCalls to display more info.
-09:40:26 [INFO] 
-09:40:26 [INFO] ==== [1m3 events[0m
-09:40:26 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x0000000000000000000000000000000000000000000000000000000000008001
-09:40:26 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x00000000000000000000000012e9185cb4097f7595d024148342abf2b9ad37a2
-09:40:26 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x0000000000000000000000000000000000000000000000000000000000008001, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049
-09:40:26 [INFO] 
-09:40:26 [INFO] 
+21:52:37 [INFO] Starting network with chain id: L2ChainId(260)
+21:52:37 [INFO] Rich Accounts
+21:52:37 [INFO] =============
+21:52:37 [INFO] Account #0: 0x36615Cf349d7F6344891B1e7CA7C72883F5dc049 (1_000_000_000_000 ETH)
+21:52:37 [INFO] Private Key: 0x7726827caac94a7f9e1b160f7ea819f172f7b6f9d2a97f992c38edeab82d4110
+21:52:37 [INFO] 
+21:52:37 [INFO] Account #1: 0xa61464658AfeAf65CccaaFD3a512b69A83B77618 (1_000_000_000_000 ETH)
+21:52:37 [INFO] Private Key: 0xac1e735be8536c6534bb4f17f06f6afc73b2b5ba84ac2cfb12f7461b20c0bbe3
+21:52:37 [INFO] 
+21:52:37 [INFO] Account #2: 0x0D43eB5B8a47bA8900d84AA36656c92024e9772e (1_000_000_000_000 ETH)
+21:52:37 [INFO] Private Key: 0xd293c684d884d56f8d6abd64fc76757d3664904e309a0645baf8522ab6366d9e
+21:52:37 [INFO] 
+21:52:37 [INFO] Account #3: 0xA13c10C0D5bd6f79041B9835c63f91de35A15883 (1_000_000_000_000 ETH)
+21:52:37 [INFO] Private Key: 0x850683b40d4a740aa6e745f889a6fdc8327be76e122f5aba645a5b02d0248db8
+21:52:37 [INFO] 
+21:52:37 [INFO] Account #4: 0x8002cD98Cfb563492A6fB3E7C8243b7B9Ad4cc92 (1_000_000_000_000 ETH)
+21:52:37 [INFO] Private Key: 0xf12e28c0eb1ef4ff90478f6805b68d63737b7f33abfa091601140805da450d93
+21:52:37 [INFO] 
+21:52:37 [INFO] Account #5: 0x4F9133D1d3F50011A6859807C837bdCB31Aaab13 (1_000_000_000_000 ETH)
+21:52:37 [INFO] Private Key: 0xe667e57a9b8aaa6709e51ff7d093f1c5b73b63f9987e4ab4aa9a5c699e024ee8
+21:52:37 [INFO] 
+21:52:37 [INFO] Account #6: 0xbd29A1B981925B94eEc5c4F1125AF02a2Ec4d1cA (1_000_000_000_000 ETH)
+21:52:37 [INFO] Private Key: 0x28a574ab2de8a00364d5dd4b07c4f2f574ef7fcc2a86a197f65abaec836d1959
+21:52:37 [INFO] 
+21:52:37 [INFO] Account #7: 0xedB6F5B4aab3dD95C7806Af42881FF12BE7e9daa (1_000_000_000_000 ETH)
+21:52:37 [INFO] Private Key: 0x74d8b3a188f7260f67698eb44da07397a298df5427df681ef68c45b34b61f998
+21:52:37 [INFO] 
+21:52:37 [INFO] Account #8: 0xe706e60ab5Dc512C36A4646D719b889F398cbBcB (1_000_000_000_000 ETH)
+21:52:37 [INFO] Private Key: 0xbe79721778b48bcc679b78edac0ce48306a8578186ffcb9f2ee455ae6efeace1
+21:52:37 [INFO] 
+21:52:37 [INFO] Account #9: 0xE90E12261CCb0F3F7976Ae611A29e84a6A85f424 (1_000_000_000_000 ETH)
+21:52:37 [INFO] Private Key: 0x3eb15da85647edd9a1159a4a13b9e7c56877c4eb33f614546d4db06a51868b1c
+21:52:37 [INFO] 
+21:52:37 [INFO] ========================================
+21:52:37 [INFO]   Node is ready at 127.0.0.1:8011
+21:52:37 [INFO] ========================================
+21:52:44 [INFO] Call: [32mSUCCESS[0m
+21:52:44 [INFO] Output: "0x"
+21:52:44 [INFO] === Console Logs: 
+21:52:44 [INFO] === Call traces:
+21:52:44 [INFO] Call: [32mSUCCESS[0m
+21:52:44 [INFO] Output: "0x"
+21:52:44 [INFO] === Console Logs: 
+21:52:44 [INFO] === Call traces:
+21:52:44 [INFO] Call: [32mSUCCESS[0m
+21:52:44 [INFO] Output: "0x"
+21:52:44 [INFO] === Console Logs: 
+21:52:44 [INFO] === Call traces:
+21:52:44 [INFO] Call: [32mSUCCESS[0m
+21:52:44 [INFO] Output: "0x"
+21:52:44 [INFO] === Console Logs: 
+21:52:44 [INFO] === Call traces:
+21:54:45 [INFO] 
+21:54:45 [INFO] Executing [1m0x801278d4ef20da5d05236cad909e1759377a219a53f018c65217a3eb81bf81c6[0m
+21:54:45 [INFO] ┌─────────────────────────┐
+21:54:45 [INFO] │   TRANSACTION SUMMARY   │
+21:54:45 [INFO] └─────────────────────────┘
+21:54:45 [INFO] Transaction: [32mSUCCESS[0m
+21:54:45 [INFO] Initiator: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
+21:54:45 [INFO] Payer: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
+21:54:45 [INFO] Gas - Limit: 53_228_369 | Used: 43_509_243 | Refunded: 9_719_126
+21:54:45 [INFO] Use --show-gas-details flag or call config_setShowGasDetails to display more info
+21:54:45 [INFO] 
+21:54:45 [INFO] ==== Console logs: 
+21:54:45 [INFO] 
+21:54:45 [INFO] ==== [1m22 call traces. [0m Use --show-calls flag or call config_setShowCalls to display more info.
+21:54:45 [INFO] 
+21:54:45 [INFO] ==== [1m6 events[0m
+21:54:45 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x0000000000000000000000000000000000000000000000000000000000008001
+21:54:45 [INFO] [34mL1 messenger                              [0m 0x3a36e47291f4201faf137fab081d92295bce2d53be2c6ca68ba82c7faa9ce241, 0x000000000000000000000000000000000000000000000000000000000000800e, 0xbcd22a68e79117a52b4bcf72e616f39d75f1a5d02a186e1ccb15feb42d9f6666
+21:54:45 [INFO] [34mKnown code storage                        [0m 0xc94722ff13eacf53547c4741dab5228353a05938ffcdd5d4a2d533ae0e618287, 0x010001bfb838ef9d8fc8b94f6438f32674f4afefab31b8d56a7d0514448ade9f, 0x0000000000000000000000000000000000000000000000000000000000000000
+21:54:45 [INFO] [34m0x111c3e89ce80e62ee88318c2804920d4c96f92bb[0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x0000000000000000000000000000000000000000000000000000000000000000, 0x000000000000000000000000a61464658afeaf65cccaafd3a512b69a83b77618
+21:54:45 [INFO] [34mL2 deployer                               [0m 0x290afdae231a3fc0bbae8b1af63698b0a1d79b21ad17df0342dfb952fe74f8e5, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x010001bfb838ef9d8fc8b94f6438f32674f4afefab31b8d56a7d0514448ade9f, 0x000000000000000000000000111c3e89ce80e62ee88318c2804920d4c96f92bb
+21:54:45 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x0000000000000000000000000000000000000000000000000000000000008001, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049
+21:54:45 [INFO] 
+21:54:45 [INFO] 
+21:54:45 [INFO] 
+21:54:45 [INFO] Executing [1m0xa7be518f474272ba9b868ab90cde0ecfd1060bbfc4fd1e518e5b929f332dd386[0m
+21:54:45 [INFO] ┌─────────────────────────┐
+21:54:45 [INFO] │   TRANSACTION SUMMARY   │
+21:54:45 [INFO] └─────────────────────────┘
+21:54:45 [INFO] Transaction: [32mSUCCESS[0m
+21:54:45 [INFO] Initiator: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
+21:54:45 [INFO] Payer: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
+21:54:45 [INFO] Gas - Limit: 3_589_603 | Used: 2_251_177 | Refunded: 1_338_426
+21:54:45 [INFO] Use --show-gas-details flag or call config_setShowGasDetails to display more info
+21:54:45 [INFO] 
+21:54:45 [INFO] ==== Console logs: 
+21:54:45 [INFO] 
+21:54:45 [INFO] ==== [1m20 call traces. [0m Use --show-calls flag or call config_setShowCalls to display more info.
+21:54:45 [INFO] 
+21:54:45 [INFO] ==== [1m4 events[0m
+21:54:45 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x0000000000000000000000000000000000000000000000000000000000008001
+21:54:45 [INFO] [34m0x4b5df730c2e6b28e17013a1485e5d9bc41efe021[0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x0000000000000000000000000000000000000000000000000000000000000000, 0x000000000000000000000000a61464658afeaf65cccaafd3a512b69a83b77618
+21:54:45 [INFO] [34mL2 deployer                               [0m 0x290afdae231a3fc0bbae8b1af63698b0a1d79b21ad17df0342dfb952fe74f8e5, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x010001bfb838ef9d8fc8b94f6438f32674f4afefab31b8d56a7d0514448ade9f, 0x0000000000000000000000004b5df730c2e6b28e17013a1485e5d9bc41efe021
+21:54:45 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x0000000000000000000000000000000000000000000000000000000000008001, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049
+21:54:45 [INFO] 
+21:54:45 [INFO] 
+21:54:46 [INFO] 
+21:54:46 [INFO] Executing [1m0x48ff90b9e486a97dba82b8ff2ebcd811fbedf29e640d894a2b7c17695b0d5697[0m
+21:54:46 [INFO] ┌─────────────────────────┐
+21:54:46 [INFO] │   TRANSACTION SUMMARY   │
+21:54:46 [INFO] └─────────────────────────┘
+21:54:46 [INFO] Transaction: [32mSUCCESS[0m
+21:54:46 [INFO] Initiator: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
+21:54:46 [INFO] Payer: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
+21:54:46 [INFO] Gas - Limit: 3_589_603 | Used: 2_251_177 | Refunded: 1_338_426
+21:54:46 [INFO] Use --show-gas-details flag or call config_setShowGasDetails to display more info
+21:54:46 [INFO] 
+21:54:46 [INFO] ==== Console logs: 
+21:54:46 [INFO] 
+21:54:46 [INFO] ==== [1m20 call traces. [0m Use --show-calls flag or call config_setShowCalls to display more info.
+21:54:46 [INFO] 
+21:54:46 [INFO] ==== [1m4 events[0m
+21:54:46 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x0000000000000000000000000000000000000000000000000000000000008001
+21:54:46 [INFO] [34m0x26b368c3ed16313ebd6660b72d8e4439a697cb0b[0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x0000000000000000000000000000000000000000000000000000000000000000, 0x000000000000000000000000a61464658afeaf65cccaafd3a512b69a83b77618
+21:54:46 [INFO] [34mL2 deployer                               [0m 0x290afdae231a3fc0bbae8b1af63698b0a1d79b21ad17df0342dfb952fe74f8e5, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x010001bfb838ef9d8fc8b94f6438f32674f4afefab31b8d56a7d0514448ade9f, 0x00000000000000000000000026b368c3ed16313ebd6660b72d8e4439a697cb0b
+21:54:46 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x0000000000000000000000000000000000000000000000000000000000008001, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049
+21:54:46 [INFO] 
+21:54:46 [INFO] 
+21:55:30 [INFO] Call: [31mFAILED[0m: Error function_selector = 0x, data = 0x
+21:55:30 [INFO] === Console Logs: 
+21:55:30 [INFO] === Call traces:
+21:55:30 [INFO] [41mexecution reverted[0m
+21:55:30 [INFO] Call: [31mFAILED[0m: Error function_selector = 0x, data = 0x
+21:55:30 [INFO] === Console Logs: 
+21:55:30 [INFO] === Call traces:
+21:55:30 [INFO] [41mexecution reverted[0m
+21:55:30 [INFO] Call: [32mSUCCESS[0m
+21:55:30 [INFO] Output: "0x000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000034441490000000000000000000000000000000000000000000000000000000000"
+21:55:30 [INFO] === Console Logs: 
+21:55:30 [INFO] === Call traces:
+21:55:30 [INFO] Call: [32mSUCCESS[0m
+21:55:30 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000012"
+21:55:30 [INFO] === Console Logs: 
+21:55:30 [INFO] === Call traces:
+21:55:30 [INFO] Call: [32mSUCCESS[0m
+21:55:30 [INFO] Output: "0x0000000000000000000000000000000000000000204fce5e3e25026110000000"
+21:55:30 [INFO] === Console Logs: 
+21:55:30 [INFO] === Call traces:
+21:55:30 [INFO] Call: [32mSUCCESS[0m
+21:55:30 [INFO] Output: "0x000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000034441490000000000000000000000000000000000000000000000000000000000"
+21:55:30 [INFO] === Console Logs: 
+21:55:30 [INFO] === Call traces:
+21:55:30 [INFO] Call: [32mSUCCESS[0m
+21:55:30 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000012"
+21:55:30 [INFO] === Console Logs: 
+21:55:30 [INFO] === Call traces:
+21:55:32 [INFO] Call: [32mSUCCESS[0m
+21:55:32 [INFO] Output: "0x0000000000000000000000000000000000000000204fce5e3e25026110000000"
+21:55:32 [INFO] === Console Logs: 
+21:55:32 [INFO] === Call traces:
+21:55:33 [INFO] Call: [31mFAILED[0m: Error function_selector = 0x, data = 0x
+21:55:33 [INFO] === Console Logs: 
+21:55:33 [INFO] === Call traces:
+21:55:33 [INFO] [41mexecution reverted[0m
+21:55:43 [INFO] Call: [31mFAILED[0m: Error function_selector = 0x, data = 0x
+21:55:43 [INFO] === Console Logs: 
+21:55:43 [INFO] === Call traces:
+21:55:43 [INFO] [41mexecution reverted[0m
+21:55:43 [INFO] Call: [31mFAILED[0m: Error function_selector = 0x, data = 0x
+21:55:43 [INFO] === Console Logs: 
+21:55:43 [INFO] === Call traces:
+21:55:43 [INFO] [41mexecution reverted[0m
+21:55:43 [INFO] Call: [32mSUCCESS[0m
+21:55:43 [INFO] Output: "0x000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000045553445400000000000000000000000000000000000000000000000000000000"
+21:55:43 [INFO] === Console Logs: 
+21:55:43 [INFO] === Call traces:
+21:55:43 [INFO] Call: [32mSUCCESS[0m
+21:55:43 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000012"
+21:55:43 [INFO] === Console Logs: 
+21:55:43 [INFO] === Call traces:
+21:55:43 [INFO] Call: [32mSUCCESS[0m
+21:55:43 [INFO] Output: "0x0000000000000000000000000000000000000000204fce5e3e25026110000000"
+21:55:43 [INFO] === Console Logs: 
+21:55:43 [INFO] === Call traces:
+21:55:43 [INFO] Call: [32mSUCCESS[0m
+21:55:43 [INFO] Output: "0x000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000045553445400000000000000000000000000000000000000000000000000000000"
+21:55:43 [INFO] === Console Logs: 
+21:55:43 [INFO] === Call traces:
+21:55:43 [INFO] Call: [32mSUCCESS[0m
+21:55:43 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000012"
+21:55:43 [INFO] === Console Logs: 
+21:55:43 [INFO] === Call traces:
+21:55:44 [INFO] Call: [32mSUCCESS[0m
+21:55:44 [INFO] Output: "0x0000000000000000000000000000000000000000204fce5e3e25026110000000"
+21:55:44 [INFO] === Console Logs: 
+21:55:44 [INFO] === Call traces:
+21:55:45 [INFO] Call: [31mFAILED[0m: Error function_selector = 0x, data = 0x
+21:55:45 [INFO] === Console Logs: 
+21:55:45 [INFO] === Call traces:
+21:55:45 [INFO] [41mexecution reverted[0m
+21:55:52 [INFO] Call: [31mFAILED[0m: Error function_selector = 0x, data = 0x
+21:55:52 [INFO] === Console Logs: 
+21:55:52 [INFO] === Call traces:
+21:55:52 [INFO] [41mexecution reverted[0m
+21:55:53 [INFO] Call: [31mFAILED[0m: Error function_selector = 0x, data = 0x
+21:55:53 [INFO] === Console Logs: 
+21:55:53 [INFO] === Call traces:
+21:55:53 [INFO] [41mexecution reverted[0m
+21:55:53 [INFO] Call: [32mSUCCESS[0m
+21:55:53 [INFO] Output: "0x000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000045553444300000000000000000000000000000000000000000000000000000000"
+21:55:53 [INFO] === Console Logs: 
+21:55:53 [INFO] === Call traces:
+21:55:53 [INFO] Call: [32mSUCCESS[0m
+21:55:53 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000012"
+21:55:53 [INFO] === Console Logs: 
+21:55:53 [INFO] === Call traces:
+21:55:53 [INFO] Call: [32mSUCCESS[0m
+21:55:53 [INFO] Output: "0x0000000000000000000000000000000000000000204fce5e3e25026110000000"
+21:55:53 [INFO] === Console Logs: 
+21:55:53 [INFO] === Call traces:
+21:55:53 [INFO] Call: [32mSUCCESS[0m
+21:55:53 [INFO] Output: "0x000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000045553444300000000000000000000000000000000000000000000000000000000"
+21:55:53 [INFO] === Console Logs: 
+21:55:53 [INFO] === Call traces:
+21:55:53 [INFO] Call: [32mSUCCESS[0m
+21:55:53 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000012"
+21:55:53 [INFO] === Console Logs: 
+21:55:53 [INFO] === Call traces:
+21:55:53 [INFO] Call: [32mSUCCESS[0m
+21:55:53 [INFO] Output: "0x0000000000000000000000000000000000000000204fce5e3e25026110000000"
+21:55:53 [INFO] === Console Logs: 
+21:55:53 [INFO] === Call traces:
+21:55:54 [INFO] Call: [31mFAILED[0m: Error function_selector = 0x, data = 0x
+21:55:54 [INFO] === Console Logs: 
+21:55:54 [INFO] === Call traces:
+21:55:54 [INFO] [41mexecution reverted[0m
+21:57:04 [INFO] 
+21:57:04 [INFO] Executing [1m0x5fe12101fb5d2deed5caf32df4b33e52cd1376aacd52672fec14bbfe75599de0[0m
+21:57:04 [INFO] ┌─────────────────────────┐
+21:57:04 [INFO] │   TRANSACTION SUMMARY   │
+21:57:04 [INFO] └─────────────────────────┘
+21:57:04 [INFO] Transaction: [32mSUCCESS[0m
+21:57:04 [INFO] Initiator: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
+21:57:04 [INFO] Payer: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
+21:57:04 [INFO] Gas - Limit: 189_240_034 | Used: 156_274_024 | Refunded: 32_966_010
+21:57:04 [INFO] Use --show-gas-details flag or call config_setShowGasDetails to display more info
+21:57:04 [INFO] 
+21:57:04 [INFO] ==== Console logs: 
+21:57:04 [INFO] 
+21:57:04 [INFO] ==== [1m24 call traces. [0m Use --show-calls flag or call config_setShowCalls to display more info.
+21:57:04 [INFO] 
+21:57:04 [INFO] ==== [1m7 events[0m
+21:57:04 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x0000000000000000000000000000000000000000000000000000000000008001
+21:57:04 [INFO] [34mL1 messenger                              [0m 0x3a36e47291f4201faf137fab081d92295bce2d53be2c6ca68ba82c7faa9ce241, 0x000000000000000000000000000000000000000000000000000000000000800e, 0x3423c6684a455c82a9a5f6183cfe4b054fd240c9593b2d311e73bf1137ac0a91
+21:57:04 [INFO] [34mKnown code storage                        [0m 0xc94722ff13eacf53547c4741dab5228353a05938ffcdd5d4a2d533ae0e618287, 0x010006eb6ed996f958ce1bc01f5995a87a99a7fff63f280049217776f846d3b6, 0x0000000000000000000000000000000000000000000000000000000000000000
+21:57:04 [INFO] [34mL1 messenger                              [0m 0x3a36e47291f4201faf137fab081d92295bce2d53be2c6ca68ba82c7faa9ce241, 0x000000000000000000000000000000000000000000000000000000000000800e, 0x0e789c369c4ccd3f2a95422e24a44fd81d6891ba25c23b9f314f0847a5352dee
+21:57:04 [INFO] [34mKnown code storage                        [0m 0xc94722ff13eacf53547c4741dab5228353a05938ffcdd5d4a2d533ae0e618287, 0x01000079f354bbb955812079210c8ad285159a1fccc3422cf4005b07822f5692, 0x0000000000000000000000000000000000000000000000000000000000000000
+21:57:04 [INFO] [34mL2 deployer                               [0m 0x290afdae231a3fc0bbae8b1af63698b0a1d79b21ad17df0342dfb952fe74f8e5, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x01000079f354bbb955812079210c8ad285159a1fccc3422cf4005b07822f5692, 0x000000000000000000000000094499df5ee555ffc33af07862e43c90e6fee501
+21:57:04 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x0000000000000000000000000000000000000000000000000000000000008001, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049
+21:57:04 [INFO] 
+21:57:04 [INFO] 
+21:57:36 [INFO] 
+21:57:36 [INFO] Executing [1m0xe0d0348f46259a6dcddc680cfb946987f623c699a1a4ff204c41087283ce1fe6[0m
+21:57:36 [INFO] ┌─────────────────────────┐
+21:57:36 [INFO] │   TRANSACTION SUMMARY   │
+21:57:36 [INFO] └─────────────────────────┘
+21:57:36 [INFO] Transaction: [32mSUCCESS[0m
+21:57:36 [INFO] Initiator: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
+21:57:36 [INFO] Payer: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
+21:57:36 [INFO] Gas - Limit: 87_837_372 | Used: 72_317_400 | Refunded: 15_519_972
+21:57:36 [INFO] Use --show-gas-details flag or call config_setShowGasDetails to display more info
+21:57:36 [INFO] 
+21:57:36 [INFO] ==== Console logs: 
+21:57:36 [INFO] 
+21:57:36 [INFO] ==== [1m22 call traces. [0m Use --show-calls flag or call config_setShowCalls to display more info.
+21:57:36 [INFO] 
+21:57:36 [INFO] ==== [1m6 events[0m
+21:57:36 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x0000000000000000000000000000000000000000000000000000000000008001
+21:57:36 [INFO] [34mL1 messenger                              [0m 0x3a36e47291f4201faf137fab081d92295bce2d53be2c6ca68ba82c7faa9ce241, 0x000000000000000000000000000000000000000000000000000000000000800e, 0x0cea55e9278852961ff84161c64027d7cd73ef5c46023482cf431d8d86ecd880
+21:57:36 [INFO] [34mKnown code storage                        [0m 0xc94722ff13eacf53547c4741dab5228353a05938ffcdd5d4a2d533ae0e618287, 0x01000345c1005d90db5af723e7b8fc5e06b38e6ce0376c2bacf1445cb37d9aea, 0x0000000000000000000000000000000000000000000000000000000000000000
+21:57:36 [INFO] [34m0xb76ed02dea1ba444609602be5d587c4bffd67153[0m 0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0, 0x0000000000000000000000000000000000000000000000000000000000000000, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049
+21:57:36 [INFO] [34mL2 deployer                               [0m 0x290afdae231a3fc0bbae8b1af63698b0a1d79b21ad17df0342dfb952fe74f8e5, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x01000345c1005d90db5af723e7b8fc5e06b38e6ce0376c2bacf1445cb37d9aea, 0x000000000000000000000000b76ed02dea1ba444609602be5d587c4bffd67153
+21:57:36 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x0000000000000000000000000000000000000000000000000000000000008001, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049
+21:57:36 [INFO] 
+21:57:36 [INFO] 
+21:57:59 [INFO] Call: [32mSUCCESS[0m
+21:57:59 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000000"
+21:57:59 [INFO] === Console Logs: 
+21:57:59 [INFO] === Call traces:
+21:57:59 [INFO] Call: [32mSUCCESS[0m
+21:57:59 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000000"
+21:57:59 [INFO] === Console Logs: 
+21:57:59 [INFO] === Call traces:
+21:57:59 [INFO] Call: [32mSUCCESS[0m
+21:57:59 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000000"
+21:57:59 [INFO] === Console Logs: 
+21:57:59 [INFO] === Call traces:
+21:57:59 [INFO] Call: [32mSUCCESS[0m
+21:57:59 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000000"
+21:57:59 [INFO] === Console Logs: 
+21:57:59 [INFO] === Call traces:
+21:58:09 [INFO] 
+21:58:09 [INFO] Executing [1m0x8638d307a77d43f71bac72b0770bfd5d140d5793ef16addc733dc4fd04d62fc3[0m
+21:58:09 [INFO] ┌─────────────────────────┐
+21:58:09 [INFO] │   TRANSACTION SUMMARY   │
+21:58:09 [INFO] └─────────────────────────┘
+21:58:09 [INFO] Transaction: [32mSUCCESS[0m
+21:58:09 [INFO] Initiator: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
+21:58:09 [INFO] Payer: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
+21:58:09 [INFO] Gas - Limit: 2_689_106 | Used: 1_853_908 | Refunded: 835_198
+21:58:09 [INFO] Use --show-gas-details flag or call config_setShowGasDetails to display more info
+21:58:09 [INFO] 
+21:58:09 [INFO] ==== Console logs: 
+21:58:09 [INFO] 
+21:58:09 [INFO] ==== [1m20 call traces. [0m Use --show-calls flag or call config_setShowCalls to display more info.
+21:58:09 [INFO] 
+21:58:09 [INFO] ==== [1m3 events[0m
+21:58:09 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x0000000000000000000000000000000000000000000000000000000000008001
+21:58:09 [INFO] [34mL2 deployer                               [0m 0x290afdae231a3fc0bbae8b1af63698b0a1d79b21ad17df0342dfb952fe74f8e5, 0x000000000000000000000000094499df5ee555ffc33af07862e43c90e6fee501, 0x010006eb6ed996f958ce1bc01f5995a87a99a7fff63f280049217776f846d3b6, 0x000000000000000000000000ee9049af7b017bd26fedcbc8ae089722a5c69ee5
+21:58:09 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x0000000000000000000000000000000000000000000000000000000000008001, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049
+21:58:09 [INFO] 
+21:58:09 [INFO] 
+21:58:10 [INFO] Call: [32mSUCCESS[0m
+21:58:10 [INFO] Output: "0x010006eb6ed996f958ce1bc01f5995a87a99a7fff63f280049217776f846d3b6"
+21:58:10 [INFO] === Console Logs: 
+21:58:10 [INFO] === Call traces:
+21:58:16 [INFO] 
+21:58:16 [INFO] Executing [1m0x253b55c0050340241fac25808b5e19f413ba7920615b8f3ed430e52837f258bd[0m
+21:58:16 [INFO] ┌─────────────────────────┐
+21:58:16 [INFO] │   TRANSACTION SUMMARY   │
+21:58:16 [INFO] └─────────────────────────┘
+21:58:16 [INFO] Transaction: [32mSUCCESS[0m
+21:58:16 [INFO] Initiator: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
+21:58:16 [INFO] Payer: 0x36615cf349d7f6344891b1e7ca7c72883f5dc049
+21:58:16 [INFO] Gas - Limit: 5_392_668 | Used: 3_701_699 | Refunded: 1_690_969
+21:58:16 [INFO] Use --show-gas-details flag or call config_setShowGasDetails to display more info
+21:58:16 [INFO] 
+21:58:16 [INFO] ==== Console logs: 
+21:58:16 [INFO] 
+21:58:16 [INFO] ==== [1m20 call traces. [0m Use --show-calls flag or call config_setShowCalls to display more info.
+21:58:16 [INFO] 
+21:58:16 [INFO] ==== [1m3 events[0m
+21:58:16 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049, 0x0000000000000000000000000000000000000000000000000000000000008001
+21:58:16 [INFO] [34m0xb76ed02dea1ba444609602be5d587c4bffd67153[0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x0000000000000000000000000000000000000000000000000000000000000000, 0x000000000000000000000000a61464658afeaf65cccaafd3a512b69a83b77618, 0x0000000000000000000000000000000000000000000000000000000000000001
+21:58:16 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x0000000000000000000000000000000000000000000000000000000000008001, 0x00000000000000000000000036615cf349d7f6344891b1e7ca7c72883f5dc049
+21:58:16 [INFO] 
+21:58:16 [INFO] 
+21:58:27 [INFO] Call: [32mSUCCESS[0m
+21:58:27 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000001"
+21:58:27 [INFO] === Console Logs: 
+21:58:27 [INFO] === Call traces:
+21:58:27 [INFO] Call: [32mSUCCESS[0m
+21:58:27 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000001"
+21:58:27 [INFO] === Console Logs: 
+21:58:27 [INFO] === Call traces:
+21:58:27 [INFO] Call: [32mSUCCESS[0m
+21:58:27 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000001"
+21:58:27 [INFO] === Console Logs: 
+21:58:27 [INFO] === Call traces:
+21:58:27 [INFO] Call: [32mSUCCESS[0m
+21:58:27 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000001"
+21:58:27 [INFO] === Console Logs: 
+21:58:27 [INFO] === Call traces:
+21:58:27 [INFO] Call: [32mSUCCESS[0m
+21:58:27 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000008168747470733a2f2f62616679626569687175666d62353566346b6a78376f6264686f716b3762736c36797761347933697279696561776c6f626e6433776636356737712e697066732e7733732e6c696e6b2f3078613631343634363538416665416636354363636161464433613531326236394138334237373631382e6a736f6e00000000000000000000000000000000000000000000000000000000000000"
+21:58:27 [INFO] === Console Logs: 
+21:58:27 [INFO] === Call traces:
+21:58:27 [INFO] Call: [32mSUCCESS[0m
+21:58:27 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000008168747470733a2f2f62616679626569687175666d62353566346b6a78376f6264686f716b3762736c36797761347933697279696561776c6f626e6433776636356737712e697066732e7733732e6c696e6b2f3078613631343634363538416665416636354363636161464433613531326236394138334237373631382e6a736f6e00000000000000000000000000000000000000000000000000000000000000"
+21:58:27 [INFO] === Console Logs: 
+21:58:27 [INFO] === Call traces:
+21:58:27 [INFO] Call: [32mSUCCESS[0m
+21:58:27 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000008168747470733a2f2f62616679626569687175666d62353566346b6a78376f6264686f716b3762736c36797761347933697279696561776c6f626e6433776636356737712e697066732e7733732e6c696e6b2f3078613631343634363538416665416636354363636161464433613531326236394138334237373631382e6a736f6e00000000000000000000000000000000000000000000000000000000000000"
+21:58:27 [INFO] === Console Logs: 
+21:58:27 [INFO] === Call traces:
+21:58:27 [INFO] Call: [32mSUCCESS[0m
+21:58:27 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000008168747470733a2f2f62616679626569687175666d62353566346b6a78376f6264686f716b3762736c36797761347933697279696561776c6f626e6433776636356737712e697066732e7733732e6c696e6b2f3078613631343634363538416665416636354363636161464433613531326236394138334237373631382e6a736f6e00000000000000000000000000000000000000000000000000000000000000"
+21:58:27 [INFO] === Console Logs: 
+21:58:27 [INFO] === Call traces:
+21:58:41 [INFO] Call: [32mSUCCESS[0m
+21:58:41 [INFO] Output: "0x0000000000000000000000000000000000000000204fce5e3e25026110000000"
+21:58:41 [INFO] === Console Logs: 
+21:58:41 [INFO] === Call traces:
+21:58:41 [INFO] Call: [32mSUCCESS[0m
+21:58:41 [INFO] Output: "0x0000000000000000000000000000000000000000204fce5e3e25026110000000"
+21:58:41 [INFO] === Console Logs: 
+21:58:41 [INFO] === Call traces:
+21:58:41 [INFO] Call: [32mSUCCESS[0m
+21:58:41 [INFO] Output: "0x0000000000000000000000000000000000000000204fce5e3e25026110000000"
+21:58:41 [INFO] === Console Logs: 
+21:58:41 [INFO] === Call traces:
+21:58:57 [INFO] 
+21:58:57 [INFO] Executing [1m0x0fdbdb04ff0097437b7ed9653a2d74ad5538ca1577e852672ca8f53290a59177[0m
+21:58:57 [INFO] ┌─────────────────────────┐
+21:58:57 [INFO] │   TRANSACTION SUMMARY   │
+21:58:57 [INFO] └─────────────────────────┘
+21:58:57 [INFO] Transaction: [31mHALTED[0m
+21:58:57 [INFO] Initiator: 0xa61464658afeaf65cccaafd3a512b69a83b77618
+21:58:57 [INFO] Payer: 0xa61464658afeaf65cccaafd3a512b69a83b77618
+21:58:57 [INFO] Gas - Limit: 1_398_253 | Used: 1_398_253 | Refunded: 0
+21:58:57 [INFO] Use --show-gas-details flag or call config_setShowGasDetails to display more info
+21:58:57 [INFO] 
+21:58:57 [INFO] ==== Console logs: 
+21:58:57 [INFO] 
+21:58:57 [INFO] ==== [1m10 call traces. [0m Use --show-calls flag or call config_setShowCalls to display more info.
+21:58:57 [INFO] 
+21:58:57 [INFO] ==== [1m0 events[0m
+21:58:57 [INFO] 
+21:58:57 [INFO] 
+21:59:35 [INFO] 
+21:59:35 [INFO] Executing [1m0x2f5f6bcd022f8031a34207ac1c81fffc4b28df7d51cb0002094c0ce24ff61412[0m
+21:59:35 [INFO] ┌─────────────────────────┐
+21:59:35 [INFO] │   TRANSACTION SUMMARY   │
+21:59:35 [INFO] └─────────────────────────┘
+21:59:35 [INFO] Transaction: [32mSUCCESS[0m
+21:59:35 [INFO] Initiator: 0xa61464658afeaf65cccaafd3a512b69a83b77618
+21:59:35 [INFO] Payer: 0xa61464658afeaf65cccaafd3a512b69a83b77618
+21:59:35 [INFO] Gas - Limit: 1_398_253 | Used: 996_801 | Refunded: 401_452
+21:59:35 [INFO] Use --show-gas-details flag or call config_setShowGasDetails to display more info
+21:59:35 [INFO] 
+21:59:35 [INFO] ==== Console logs: 
+21:59:35 [INFO] 
+21:59:35 [INFO] ==== [1m21 call traces. [0m Use --show-calls flag or call config_setShowCalls to display more info.
+21:59:35 [INFO] 
+21:59:35 [INFO] ==== [1m4 events[0m
+21:59:35 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x000000000000000000000000a61464658afeaf65cccaafd3a512b69a83b77618, 0x0000000000000000000000000000000000000000000000000000000000008001
+21:59:35 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x0000000000000000000000000000000000000000000000000000000000008001, 0x000000000000000000000000a61464658afeaf65cccaafd3a512b69a83b77618
+21:59:35 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x000000000000000000000000a61464658afeaf65cccaafd3a512b69a83b77618, 0x000000000000000000000000f43521e87579335a46f8bda4f53d8797a74c7151
+21:59:35 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x0000000000000000000000000000000000000000000000000000000000008001, 0x000000000000000000000000a61464658afeaf65cccaafd3a512b69a83b77618
+21:59:35 [INFO] 
+21:59:35 [INFO] 
+22:00:10 [INFO] 
+22:00:10 [INFO] Executing [1m0xa0bf520ce104fb87e5bb328243eb150acca50405f276d2c836be6ba8a2448f9f[0m
+22:00:10 [INFO] ┌─────────────────────────┐
+22:00:10 [INFO] │   TRANSACTION SUMMARY   │
+22:00:10 [INFO] └─────────────────────────┘
+22:00:10 [INFO] Transaction: [32mSUCCESS[0m
+22:00:10 [INFO] Initiator: 0xa61464658afeaf65cccaafd3a512b69a83b77618
+22:00:10 [INFO] Payer: 0xa61464658afeaf65cccaafd3a512b69a83b77618
+22:00:10 [INFO] Gas - Limit: 1_061_597 | Used: 765_912 | Refunded: 295_685
+22:00:10 [INFO] Use --show-gas-details flag or call config_setShowGasDetails to display more info
+22:00:10 [INFO] 
+22:00:10 [INFO] ==== Console logs: 
+22:00:10 [INFO] 
+22:00:10 [INFO] ==== [1m21 call traces. [0m Use --show-calls flag or call config_setShowCalls to display more info.
+22:00:10 [INFO] 
+22:00:10 [INFO] ==== [1m4 events[0m
+22:00:10 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x000000000000000000000000a61464658afeaf65cccaafd3a512b69a83b77618, 0x0000000000000000000000000000000000000000000000000000000000008001
+22:00:10 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x0000000000000000000000000000000000000000000000000000000000008001, 0x000000000000000000000000a61464658afeaf65cccaafd3a512b69a83b77618
+22:00:10 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x000000000000000000000000a61464658afeaf65cccaafd3a512b69a83b77618, 0x000000000000000000000000f43521e87579335a46f8bda4f53d8797a74c7151
+22:00:10 [INFO] [34mEthToken System Contract                  [0m 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef, 0x0000000000000000000000000000000000000000000000000000000000008001, 0x000000000000000000000000a61464658afeaf65cccaafd3a512b69a83b77618
+22:00:10 [INFO] 
+22:00:10 [INFO] 
+22:00:15 [INFO] Call: [32mSUCCESS[0m
+22:00:15 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000001"
+22:00:15 [INFO] === Console Logs: 
+22:00:15 [INFO] === Call traces:
+22:00:15 [INFO] Call: [32mSUCCESS[0m
+22:00:15 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000001"
+22:00:15 [INFO] === Console Logs: 
+22:00:15 [INFO] === Call traces:
+22:00:15 [INFO] Call: [32mSUCCESS[0m
+22:00:15 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000001"
+22:00:15 [INFO] === Console Logs: 
+22:00:15 [INFO] === Call traces:
+22:00:15 [INFO] Call: [32mSUCCESS[0m
+22:00:15 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000001"
+22:00:15 [INFO] === Console Logs: 
+22:00:15 [INFO] === Call traces:
+22:00:15 [INFO] Call: [32mSUCCESS[0m
+22:00:15 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000008168747470733a2f2f62616679626569687175666d62353566346b6a78376f6264686f716b3762736c36797761347933697279696561776c6f626e6433776636356737712e697066732e7733732e6c696e6b2f3078613631343634363538416665416636354363636161464433613531326236394138334237373631382e6a736f6e00000000000000000000000000000000000000000000000000000000000000"
+22:00:15 [INFO] === Console Logs: 
+22:00:15 [INFO] === Call traces:
+22:00:15 [INFO] Call: [32mSUCCESS[0m
+22:00:15 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000008168747470733a2f2f62616679626569687175666d62353566346b6a78376f6264686f716b3762736c36797761347933697279696561776c6f626e6433776636356737712e697066732e7733732e6c696e6b2f3078613631343634363538416665416636354363636161464433613531326236394138334237373631382e6a736f6e00000000000000000000000000000000000000000000000000000000000000"
+22:00:15 [INFO] === Console Logs: 
+22:00:15 [INFO] === Call traces:
+22:00:15 [INFO] Call: [32mSUCCESS[0m
+22:00:15 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000008168747470733a2f2f62616679626569687175666d62353566346b6a78376f6264686f716b3762736c36797761347933697279696561776c6f626e6433776636356737712e697066732e7733732e6c696e6b2f3078613631343634363538416665416636354363636161464433613531326236394138334237373631382e6a736f6e00000000000000000000000000000000000000000000000000000000000000"
+22:00:15 [INFO] === Console Logs: 
+22:00:15 [INFO] === Call traces:
+22:00:15 [INFO] Call: [32mSUCCESS[0m
+22:00:15 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000008168747470733a2f2f62616679626569687175666d62353566346b6a78376f6264686f716b3762736c36797761347933697279696561776c6f626e6433776636356737712e697066732e7733732e6c696e6b2f3078613631343634363538416665416636354363636161464433613531326236394138334237373631382e6a736f6e00000000000000000000000000000000000000000000000000000000000000"
+22:00:15 [INFO] === Console Logs: 
+22:00:15 [INFO] === Call traces:
+22:00:20 [INFO] Call: [32mSUCCESS[0m
+22:00:20 [INFO] Output: "0x0000000000000000000000000000000000000000204fce5e3e25026110000000"
+22:00:20 [INFO] === Console Logs: 
+22:00:20 [INFO] === Call traces:
+22:00:20 [INFO] Call: [32mSUCCESS[0m
+22:00:20 [INFO] Output: "0x0000000000000000000000000000000000000000204fce5e3e25026110000000"
+22:00:20 [INFO] === Console Logs: 
+22:00:20 [INFO] === Call traces:
+22:00:20 [INFO] Call: [32mSUCCESS[0m
+22:00:20 [INFO] Output: "0x0000000000000000000000000000000000000000204fce5e3e25026110000000"
+22:00:20 [INFO] === Console Logs: 
+22:00:20 [INFO] === Call traces:
+22:02:32 [INFO] Call: [32mSUCCESS[0m
+22:02:32 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000001"
+22:02:32 [INFO] === Console Logs: 
+22:02:32 [INFO] === Call traces:
+22:02:32 [INFO] Call: [32mSUCCESS[0m
+22:02:32 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000001"
+22:02:32 [INFO] === Console Logs: 
+22:02:32 [INFO] === Call traces:
+22:02:32 [INFO] Call: [32mSUCCESS[0m
+22:02:32 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000001"
+22:02:32 [INFO] === Console Logs: 
+22:02:32 [INFO] === Call traces:
+22:02:32 [INFO] Call: [32mSUCCESS[0m
+22:02:32 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000001"
+22:02:32 [INFO] === Console Logs: 
+22:02:32 [INFO] === Call traces:
+22:02:32 [INFO] Call: [32mSUCCESS[0m
+22:02:32 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000008168747470733a2f2f62616679626569687175666d62353566346b6a78376f6264686f716b3762736c36797761347933697279696561776c6f626e6433776636356737712e697066732e7733732e6c696e6b2f3078613631343634363538416665416636354363636161464433613531326236394138334237373631382e6a736f6e00000000000000000000000000000000000000000000000000000000000000"
+22:02:32 [INFO] === Console Logs: 
+22:02:32 [INFO] === Call traces:
+22:02:32 [INFO] Call: [32mSUCCESS[0m
+22:02:32 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000008168747470733a2f2f62616679626569687175666d62353566346b6a78376f6264686f716b3762736c36797761347933697279696561776c6f626e6433776636356737712e697066732e7733732e6c696e6b2f3078613631343634363538416665416636354363636161464433613531326236394138334237373631382e6a736f6e00000000000000000000000000000000000000000000000000000000000000"
+22:02:32 [INFO] === Console Logs: 
+22:02:32 [INFO] === Call traces:
+22:02:32 [INFO] Call: [32mSUCCESS[0m
+22:02:32 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000008168747470733a2f2f62616679626569687175666d62353566346b6a78376f6264686f716b3762736c36797761347933697279696561776c6f626e6433776636356737712e697066732e7733732e6c696e6b2f3078613631343634363538416665416636354363636161464433613531326236394138334237373631382e6a736f6e00000000000000000000000000000000000000000000000000000000000000"
+22:02:32 [INFO] === Console Logs: 
+22:02:32 [INFO] === Call traces:
+22:02:32 [INFO] Call: [32mSUCCESS[0m
+22:02:32 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000008168747470733a2f2f62616679626569687175666d62353566346b6a78376f6264686f716b3762736c36797761347933697279696561776c6f626e6433776636356737712e697066732e7733732e6c696e6b2f3078613631343634363538416665416636354363636161464433613531326236394138334237373631382e6a736f6e00000000000000000000000000000000000000000000000000000000000000"
+22:02:32 [INFO] === Console Logs: 
+22:02:32 [INFO] === Call traces:
+22:20:04 [INFO] Call: [32mSUCCESS[0m
+22:20:04 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000001"
+22:20:04 [INFO] === Console Logs: 
+22:20:04 [INFO] === Call traces:
+22:20:04 [INFO] Call: [32mSUCCESS[0m
+22:20:04 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000001"
+22:20:04 [INFO] === Console Logs: 
+22:20:04 [INFO] === Call traces:
+22:20:04 [INFO] Call: [32mSUCCESS[0m
+22:20:04 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000001"
+22:20:04 [INFO] === Console Logs: 
+22:20:04 [INFO] === Call traces:
+22:20:04 [INFO] Call: [32mSUCCESS[0m
+22:20:04 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000001"
+22:20:04 [INFO] === Console Logs: 
+22:20:04 [INFO] === Call traces:
+22:20:04 [INFO] Call: [32mSUCCESS[0m
+22:20:04 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000008168747470733a2f2f62616679626569687175666d62353566346b6a78376f6264686f716b3762736c36797761347933697279696561776c6f626e6433776636356737712e697066732e7733732e6c696e6b2f3078613631343634363538416665416636354363636161464433613531326236394138334237373631382e6a736f6e00000000000000000000000000000000000000000000000000000000000000"
+22:20:04 [INFO] === Console Logs: 
+22:20:04 [INFO] === Call traces:
+22:20:04 [INFO] Call: [32mSUCCESS[0m
+22:20:04 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000008168747470733a2f2f62616679626569687175666d62353566346b6a78376f6264686f716b3762736c36797761347933697279696561776c6f626e6433776636356737712e697066732e7733732e6c696e6b2f3078613631343634363538416665416636354363636161464433613531326236394138334237373631382e6a736f6e00000000000000000000000000000000000000000000000000000000000000"
+22:20:04 [INFO] === Console Logs: 
+22:20:04 [INFO] === Call traces:
+22:20:04 [INFO] Call: [32mSUCCESS[0m
+22:20:04 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000008168747470733a2f2f62616679626569687175666d62353566346b6a78376f6264686f716b3762736c36797761347933697279696561776c6f626e6433776636356737712e697066732e7733732e6c696e6b2f3078613631343634363538416665416636354363636161464433613531326236394138334237373631382e6a736f6e00000000000000000000000000000000000000000000000000000000000000"
+22:20:04 [INFO] === Console Logs: 
+22:20:04 [INFO] === Call traces:
+22:20:04 [INFO] Call: [32mSUCCESS[0m
+22:20:04 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000008168747470733a2f2f62616679626569687175666d62353566346b6a78376f6264686f716b3762736c36797761347933697279696561776c6f626e6433776636356737712e697066732e7733732e6c696e6b2f3078613631343634363538416665416636354363636161464433613531326236394138334237373631382e6a736f6e00000000000000000000000000000000000000000000000000000000000000"
+22:20:04 [INFO] === Console Logs: 
+22:20:04 [INFO] === Call traces:
+22:21:12 [INFO] Call: [32mSUCCESS[0m
+22:21:12 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000001"
+22:21:12 [INFO] === Console Logs: 
+22:21:12 [INFO] === Call traces:
+22:21:12 [INFO] Call: [32mSUCCESS[0m
+22:21:12 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000001"
+22:21:12 [INFO] === Console Logs: 
+22:21:12 [INFO] === Call traces:
+22:21:12 [INFO] Call: [32mSUCCESS[0m
+22:21:12 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000001"
+22:21:12 [INFO] === Console Logs: 
+22:21:12 [INFO] === Call traces:
+22:21:12 [INFO] Call: [32mSUCCESS[0m
+22:21:12 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000001"
+22:21:12 [INFO] === Console Logs: 
+22:21:12 [INFO] === Call traces:
+22:21:13 [INFO] Call: [32mSUCCESS[0m
+22:21:13 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000008168747470733a2f2f62616679626569687175666d62353566346b6a78376f6264686f716b3762736c36797761347933697279696561776c6f626e6433776636356737712e697066732e7733732e6c696e6b2f3078613631343634363538416665416636354363636161464433613531326236394138334237373631382e6a736f6e00000000000000000000000000000000000000000000000000000000000000"
+22:21:13 [INFO] === Console Logs: 
+22:21:13 [INFO] === Call traces:
+22:21:13 [INFO] Call: [32mSUCCESS[0m
+22:21:13 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000008168747470733a2f2f62616679626569687175666d62353566346b6a78376f6264686f716b3762736c36797761347933697279696561776c6f626e6433776636356737712e697066732e7733732e6c696e6b2f3078613631343634363538416665416636354363636161464433613531326236394138334237373631382e6a736f6e00000000000000000000000000000000000000000000000000000000000000"
+22:21:13 [INFO] === Console Logs: 
+22:21:13 [INFO] === Call traces:
+22:21:13 [INFO] Call: [32mSUCCESS[0m
+22:21:13 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000008168747470733a2f2f62616679626569687175666d62353566346b6a78376f6264686f716b3762736c36797761347933697279696561776c6f626e6433776636356737712e697066732e7733732e6c696e6b2f3078613631343634363538416665416636354363636161464433613531326236394138334237373631382e6a736f6e00000000000000000000000000000000000000000000000000000000000000"
+22:21:13 [INFO] === Console Logs: 
+22:21:13 [INFO] === Call traces:
+22:21:13 [INFO] Call: [32mSUCCESS[0m
+22:21:13 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000008168747470733a2f2f62616679626569687175666d62353566346b6a78376f6264686f716b3762736c36797761347933697279696561776c6f626e6433776636356737712e697066732e7733732e6c696e6b2f3078613631343634363538416665416636354363636161464433613531326236394138334237373631382e6a736f6e00000000000000000000000000000000000000000000000000000000000000"
+22:21:13 [INFO] === Console Logs: 
+22:21:13 [INFO] === Call traces:
+22:22:47 [INFO] Call: [32mSUCCESS[0m
+22:22:47 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000001"
+22:22:47 [INFO] === Console Logs: 
+22:22:47 [INFO] === Call traces:
+22:22:47 [INFO] Call: [32mSUCCESS[0m
+22:22:47 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000001"
+22:22:47 [INFO] === Console Logs: 
+22:22:47 [INFO] === Call traces:
+22:22:47 [INFO] Call: [32mSUCCESS[0m
+22:22:47 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000001"
+22:22:47 [INFO] === Console Logs: 
+22:22:47 [INFO] === Call traces:
+22:22:47 [INFO] Call: [32mSUCCESS[0m
+22:22:47 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000001"
+22:22:47 [INFO] === Console Logs: 
+22:22:47 [INFO] === Call traces:
+22:22:47 [INFO] Call: [32mSUCCESS[0m
+22:22:47 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000008168747470733a2f2f62616679626569687175666d62353566346b6a78376f6264686f716b3762736c36797761347933697279696561776c6f626e6433776636356737712e697066732e7733732e6c696e6b2f3078613631343634363538416665416636354363636161464433613531326236394138334237373631382e6a736f6e00000000000000000000000000000000000000000000000000000000000000"
+22:22:47 [INFO] === Console Logs: 
+22:22:47 [INFO] === Call traces:
+22:22:47 [INFO] Call: [32mSUCCESS[0m
+22:22:47 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000008168747470733a2f2f62616679626569687175666d62353566346b6a78376f6264686f716b3762736c36797761347933697279696561776c6f626e6433776636356737712e697066732e7733732e6c696e6b2f3078613631343634363538416665416636354363636161464433613531326236394138334237373631382e6a736f6e00000000000000000000000000000000000000000000000000000000000000"
+22:22:47 [INFO] === Console Logs: 
+22:22:47 [INFO] === Call traces:
+22:22:47 [INFO] Call: [32mSUCCESS[0m
+22:22:47 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000008168747470733a2f2f62616679626569687175666d62353566346b6a78376f6264686f716b3762736c36797761347933697279696561776c6f626e6433776636356737712e697066732e7733732e6c696e6b2f3078613631343634363538416665416636354363636161464433613531326236394138334237373631382e6a736f6e00000000000000000000000000000000000000000000000000000000000000"
+22:22:47 [INFO] === Console Logs: 
+22:22:47 [INFO] === Call traces:
+22:22:47 [INFO] Call: [32mSUCCESS[0m
+22:22:47 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000008168747470733a2f2f62616679626569687175666d62353566346b6a78376f6264686f716b3762736c36797761347933697279696561776c6f626e6433776636356737712e697066732e7733732e6c696e6b2f3078613631343634363538416665416636354363636161464433613531326236394138334237373631382e6a736f6e00000000000000000000000000000000000000000000000000000000000000"
+22:22:47 [INFO] === Console Logs: 
+22:22:47 [INFO] === Call traces:
+22:24:03 [INFO] Call: [32mSUCCESS[0m
+22:24:03 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000001"
+22:24:03 [INFO] === Console Logs: 
+22:24:03 [INFO] === Call traces:
+22:24:03 [INFO] Call: [32mSUCCESS[0m
+22:24:03 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000001"
+22:24:03 [INFO] === Console Logs: 
+22:24:03 [INFO] === Call traces:
+22:24:03 [INFO] Call: [32mSUCCESS[0m
+22:24:03 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000001"
+22:24:03 [INFO] === Console Logs: 
+22:24:03 [INFO] === Call traces:
+22:24:03 [INFO] Call: [32mSUCCESS[0m
+22:24:03 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000001"
+22:24:03 [INFO] === Console Logs: 
+22:24:03 [INFO] === Call traces:
+22:24:03 [INFO] Call: [32mSUCCESS[0m
+22:24:03 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000008168747470733a2f2f62616679626569687175666d62353566346b6a78376f6264686f716b3762736c36797761347933697279696561776c6f626e6433776636356737712e697066732e7733732e6c696e6b2f3078613631343634363538416665416636354363636161464433613531326236394138334237373631382e6a736f6e00000000000000000000000000000000000000000000000000000000000000"
+22:24:03 [INFO] === Console Logs: 
+22:24:03 [INFO] === Call traces:
+22:24:03 [INFO] Call: [32mSUCCESS[0m
+22:24:03 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000008168747470733a2f2f62616679626569687175666d62353566346b6a78376f6264686f716b3762736c36797761347933697279696561776c6f626e6433776636356737712e697066732e7733732e6c696e6b2f3078613631343634363538416665416636354363636161464433613531326236394138334237373631382e6a736f6e00000000000000000000000000000000000000000000000000000000000000"
+22:24:03 [INFO] === Console Logs: 
+22:24:03 [INFO] === Call traces:
+22:24:03 [INFO] Call: [32mSUCCESS[0m
+22:24:03 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000008168747470733a2f2f62616679626569687175666d62353566346b6a78376f6264686f716b3762736c36797761347933697279696561776c6f626e6433776636356737712e697066732e7733732e6c696e6b2f3078613631343634363538416665416636354363636161464433613531326236394138334237373631382e6a736f6e00000000000000000000000000000000000000000000000000000000000000"
+22:24:03 [INFO] === Console Logs: 
+22:24:03 [INFO] === Call traces:
+22:24:03 [INFO] Call: [32mSUCCESS[0m
+22:24:03 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000008168747470733a2f2f62616679626569687175666d62353566346b6a78376f6264686f716b3762736c36797761347933697279696561776c6f626e6433776636356737712e697066732e7733732e6c696e6b2f3078613631343634363538416665416636354363636161464433613531326236394138334237373631382e6a736f6e00000000000000000000000000000000000000000000000000000000000000"
+22:24:03 [INFO] === Console Logs: 
+22:24:03 [INFO] === Call traces:
+22:39:59 [INFO] Call: [32mSUCCESS[0m
+22:39:59 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000001"
+22:39:59 [INFO] === Console Logs: 
+22:39:59 [INFO] === Call traces:
+22:40:00 [INFO] Call: [32mSUCCESS[0m
+22:40:00 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000008168747470733a2f2f62616679626569687175666d62353566346b6a78376f6264686f716b3762736c36797761347933697279696561776c6f626e6433776636356737712e697066732e7733732e6c696e6b2f3078613631343634363538416665416636354363636161464433613531326236394138334237373631382e6a736f6e00000000000000000000000000000000000000000000000000000000000000"
+22:40:00 [INFO] === Console Logs: 
+22:40:00 [INFO] === Call traces:
+22:52:40 [INFO] Call: [32mSUCCESS[0m
+22:52:40 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000001"
+22:52:40 [INFO] === Console Logs: 
+22:52:40 [INFO] === Call traces:
+22:52:40 [INFO] Call: [32mSUCCESS[0m
+22:52:40 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000001"
+22:52:40 [INFO] === Console Logs: 
+22:52:40 [INFO] === Call traces:
+22:52:40 [INFO] Call: [32mSUCCESS[0m
+22:52:40 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000001"
+22:52:40 [INFO] === Console Logs: 
+22:52:40 [INFO] === Call traces:
+22:52:40 [INFO] Call: [32mSUCCESS[0m
+22:52:40 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000001"
+22:52:40 [INFO] === Console Logs: 
+22:52:40 [INFO] === Call traces:
+22:52:40 [INFO] Call: [32mSUCCESS[0m
+22:52:40 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000008168747470733a2f2f62616679626569687175666d62353566346b6a78376f6264686f716b3762736c36797761347933697279696561776c6f626e6433776636356737712e697066732e7733732e6c696e6b2f3078613631343634363538416665416636354363636161464433613531326236394138334237373631382e6a736f6e00000000000000000000000000000000000000000000000000000000000000"
+22:52:40 [INFO] === Console Logs: 
+22:52:40 [INFO] === Call traces:
+22:52:40 [INFO] Call: [32mSUCCESS[0m
+22:52:40 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000008168747470733a2f2f62616679626569687175666d62353566346b6a78376f6264686f716b3762736c36797761347933697279696561776c6f626e6433776636356737712e697066732e7733732e6c696e6b2f3078613631343634363538416665416636354363636161464433613531326236394138334237373631382e6a736f6e00000000000000000000000000000000000000000000000000000000000000"
+22:52:40 [INFO] === Console Logs: 
+22:52:40 [INFO] === Call traces:
+22:52:40 [INFO] Call: [32mSUCCESS[0m
+22:52:40 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000008168747470733a2f2f62616679626569687175666d62353566346b6a78376f6264686f716b3762736c36797761347933697279696561776c6f626e6433776636356737712e697066732e7733732e6c696e6b2f3078613631343634363538416665416636354363636161464433613531326236394138334237373631382e6a736f6e00000000000000000000000000000000000000000000000000000000000000"
+22:52:40 [INFO] === Console Logs: 
+22:52:40 [INFO] === Call traces:
+22:52:40 [INFO] Call: [32mSUCCESS[0m
+22:52:40 [INFO] Output: "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000008168747470733a2f2f62616679626569687175666d62353566346b6a78376f6264686f716b3762736c36797761347933697279696561776c6f626e6433776636356737712e697066732e7733732e6c696e6b2f3078613631343634363538416665416636354363636161464433613531326236394138334237373631382e6a736f6e00000000000000000000000000000000000000000000000000000000000000"
+22:52:40 [INFO] === Console Logs: 
+22:52:40 [INFO] === Call traces:

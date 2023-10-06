@@ -8,7 +8,6 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 contract SoulBoundNFT is ERC721URIStorage, Ownable {
  
     uint256 private _tokenIdCounter;
-    string private baseURI;
 
     mapping(address => uint256) tokenToAddressMapping;
     mapping(uint256 => string) tokenToURIMapping;
@@ -27,11 +26,10 @@ contract SoulBoundNFT is ERC721URIStorage, Ownable {
         if(balanceOf(to) > 0) {
             revert("Already Minted");
         }
-        uint256 tokenId = _tokenIdCounter;
         _tokenIdCounter = _tokenIdCounter + 1;
-        tokenToAddressMapping[to] = tokenId;
-        tokenToURIMapping[tokenId] = _tokenURI;
-        _safeMint(to, tokenId);
+        tokenToAddressMapping[to] = _tokenIdCounter;
+        tokenToURIMapping[_tokenIdCounter] = _tokenURI;
+        _safeMint(to, _tokenIdCounter);
     }
  
     // The following functions are overrides required by Solidity.
@@ -49,11 +47,11 @@ contract SoulBoundNFT is ERC721URIStorage, Ownable {
         return tokenToURIMapping[tokenId];
     }
 
-    function tokenID(address owner)
+    function tokenID(address _sender)
         public
         view
         returns (uint256)
     {
-        return tokenToAddressMapping[owner];
+        return tokenToAddressMapping[_sender];
     }
 }

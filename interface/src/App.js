@@ -6,16 +6,28 @@ import {
   RainbowKitProvider,
 } from '@rainbow-me/rainbowkit';
 import { configureChains, createConfig, WagmiConfig } from 'wagmi';
-import {
-  zkSyncTestnet,polygonMumbai
-} from 'wagmi/chains';
 import { publicProvider } from 'wagmi/providers/public';
 import Home from './pages/Home.js';
 import Dapps from './pages/Dapps.js';
 import Transactions from './pages/Transactions.js';
 
+export const zksyncDevnet = {
+  id: 260,
+  name: 'Zksync Devnet',
+  network: 'zksync',
+  nativeCurrency: {
+    decimals: 18,
+    name: 'Zksync',
+    symbol: 'ETH',
+  },
+  rpcUrls: {
+    public: { http: ['http://localhost:8011'] },
+    default: { http: ['http://localhost:8011'] },
+  },
+}
+
 const { chains, publicClient } = configureChains(
-  [zkSyncTestnet,polygonMumbai],
+  [zksyncDevnet],
   [
     publicProvider()
   ]
