@@ -1,6 +1,7 @@
 import { NavLink as Link } from 'react-router-dom';
+import QRCode from "react-qr-code";
 
-function Navbar({selected}) {
+function Navbar({selected, loggedIn}) {
     return (
         <div className="w-[380px] px-4 bg-[#f8fafc]">
             <div className="flex flex-col justify-between h-full">
@@ -11,10 +12,10 @@ function Navbar({selected}) {
                             <div className="font-semibold text-4xl">abyss</div>
                         </div>
                         <div className="flex p-1 space-x-6">
-                            <div className="rounded-lg w-[80px] h-[80px] bg-white">QR</div>
+                            <div className={`${loggedIn ? "" : "blur-sm"} flex items-center justify-center rounded-lg w-[80px] h-[80px] bg-white`}><QRCode className='w-[65px] h-[65px]' value="hey"/></div>
                             <div className="space-y-2">
                                 <div className="font-medium text-sm text-[#64748B]">Abyss Wallet</div>
-                                <div className="text-[#94A3B8] font-bold">123123213123</div>
+                                <div className={`${loggedIn ? "" : "blur-sm"} text-[#94A3B8] font-bold`}>123123213123</div>
                                 <div className="text-[#64748B]">explorer</div>
                             </div>
                         </div>

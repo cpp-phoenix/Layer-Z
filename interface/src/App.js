@@ -7,7 +7,7 @@ import {
 } from '@rainbow-me/rainbowkit';
 import { configureChains, createConfig, WagmiConfig } from 'wagmi';
 import {
-  zkSyncTestnet
+  zkSyncTestnet,polygonMumbai
 } from 'wagmi/chains';
 import { publicProvider } from 'wagmi/providers/public';
 import Home from './pages/Home.js';
@@ -15,7 +15,7 @@ import Dapps from './pages/Dapps.js';
 import Transactions from './pages/Transactions.js';
 
 const { chains, publicClient } = configureChains(
-  [zkSyncTestnet],
+  [zkSyncTestnet,polygonMumbai],
   [
     publicProvider()
   ]
