@@ -14,16 +14,16 @@ function SendFlap({showSendToken, abyssAddress}) {
 
     const [receiverAddress, setReceiverAddress] = useState("")
     const [receiverAmount, setReceiverAmount] = useState(0)
-    const [currentToken, setCurrentToken] = useState("ETH")
+    const [currentToken, setCurrentToken] = useState("USDC")
 
     const[showTokensList, setShowTokensList] = useState(false)
 
     const tokensList = {
-        "ETH": {
-            symbol: "ETH",
-            image: "https://assets.coingecko.com/coins/images/279/small/ethereum.png?1696501628",
-            contract: ""
-        },
+        // "ETH": {
+        //     symbol: "ETH",
+        //     image: "https://assets.coingecko.com/coins/images/279/small/ethereum.png?1696501628",
+        //     contract: ""
+        // },
         "USDT": {
             symbol: "USDT",
             image: "https://assets.coingecko.com/coins/images/325/small/Tether.png?1696501661",
@@ -46,64 +46,69 @@ function SendFlap({showSendToken, abyssAddress}) {
         console.log(receiverAmount)
 
         if(receiverAddress.length > 0 && receiverAmount > 0) {
-            if(currentToken === "ETH") {
-                const provider = new Provider("http://127.0.0.1:8011");
+            const provider = new Provider("http://127.0.0.1:8011");
 
-                const aaFactory = new ethers.Contract(
-                    process.env.REACT_APP_FACTORY_ADDRESS,
-                    factoryABI,
-                    provider,
-                );
+            const aaFactory = new ethers.Contract(
+                process.env.REACT_APP_FACTORY_ADDRESS,
+                factoryABI,
+                provider,
+            );
 
-                const salt = ethers.constants.HashZero;
+            const salt = ethers.constants.HashZero;
 
-                const owner1 = Wallet.createRandom();
+            const owner1 = Wallet.createRandom();
 
-                let aaTx = await aaFactory.populateTransaction.deployAccount(
-                    salt,
-                    owner1.address,
-                );
+            let aaTx = await aaFactory.populateTransaction.deployAccount(
+                salt,
+                owner1.address,
+            );
 
-                // const gasLimit = await provider.estimateGas(aaTx);
-                const gasPrice = await provider.getGasPrice();
-                
-                aaTx = {
-                    ...aaTx,
-                    // deploy a new account using the multisig
-                    from: abyssAddress,
-                    gasLimit: gasPrice,
-                    gasPrice: gasPrice,
-                    chainId: (await provider.getNetwork()).chainId,
-                    nonce: await provider.getTransactionCount(abyssAddress),
-                    type: 113,
-                    customData: {
-                      gasPerPubdata: utils.DEFAULT_GAS_PER_PUBDATA_LIMIT,
-                    },
-                    value: ethers.BigNumber.from(0),
-                  };
-                
-                const signedTxHash = EIP712Signer.getSignedDigest(aaTx);
+            // let aaTx = {
+            //     to: receiverAddress
+            // }
 
-                const wallet = new Wallet("0xac1e735be8536c6534bb4f17f06f6afc73b2b5ba84ac2cfb12f7461b20c0bbe3").connect(provider);
+            console.log(aaTx)
 
-                const signature = ethers.utils.concat([
-                    // Note, that `signMessage` wouldn't work here, since we don't want
-                    // the signed hash to be prefixed with `\x19Ethereum Signed Message:\n`
-                    ethers.utils.joinSignature(wallet._signingKey().signDigest(signedTxHash)),
-                ]);
-
-                aaTx.customData = {
-                    ...aaTx.customData,
-                    customSignature: signature,
+            // const gasLimit = await provider.estimateGas(aaTx);
+            const gasPrice = await provider.getGasPrice();
+            
+            aaTx = {
+                ...aaTx,
+                // deploy a new account using the multisig
+                from: abyssAddress,
+                gasLimit: gasPrice,
+                gasPrice: gasPrice,
+                chainId: (await provider.getNetwork()).chainId,
+                nonce: await provider.getTransactionCount(abyssAddress),
+                type: 113,
+                customData: {
+                    gasPerPubdata: utils.DEFAULT_GAS_PER_PUBDATA_LIMIT,
+                },
+                // value: ethers.BigNumber.from(0),
+                value: ethers.utils.parseEther(receiverAmount.toString())
                 };
 
-                console.log(aaTx)
+            console.log(aaTx)
+            
+            const signedTxHash = EIP712Signer.getSignedDigest(aaTx);
 
-                const sentTx = await provider.sendTransaction(utils.serialize(aaTx));
-                await sentTx.wait();
+            const wallet = new Wallet("0xac1e735be8536c6534bb4f17f06f6afc73b2b5ba84ac2cfb12f7461b20c0bbe3").connect(provider);
 
-                console.log(sentTx)
-            }
+            const signature = ethers.utils.concat([
+                // Note, that `signMessage` wouldn't work here, since we don't want
+                // the signed hash to be prefixed with `\x19Ethereum Signed Message:\n`
+                ethers.utils.joinSignature(wallet._signingKey().signDigest(signedTxHash)),
+            ]);
+
+            aaTx.customData = {
+                ...aaTx.customData,
+                customSignature: signature,
+            };
+
+            const sentTx = await provider.sendTransaction(utils.serialize(aaTx));
+            await sentTx.wait();
+
+            console.log(sentTx)
         }
 
     }
@@ -121,7 +126,7 @@ function SendFlap({showSendToken, abyssAddress}) {
                         </div>
                         <div className='font-semibold text-lg flex w-full justify-center border-b pb-2 mb-6'>Select a token</div>
                         {
-                            ["ETH","USDC","USDT","DAI"].map(key => {
+                            ["USDC","USDT","DAI"].map(key => {
                                 return(
                                     <div className='my-2'>
                                         <button onClick={() => {setShowTokensList(false); setCurrentToken(key);}} className="w-full px-2 flex items-center justify-center font-semibold rounded-lg h-[60px] bg-[#f1f5f9]"> 
