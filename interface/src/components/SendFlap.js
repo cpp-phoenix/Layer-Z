@@ -5,6 +5,7 @@ import { signMessage } from '@wagmi/core'
 import { ethers } from "ethers";
 import { Wallet, Provider, utils, EIP712Signer } from "zksync-web3";
 import factoryABI from "./../factoryABI.json"
+import multisigABI from "./../multisigABI.json"
 
 function SendFlap({showSendToken, abyssAddress}) {
 
@@ -49,17 +50,18 @@ function SendFlap({showSendToken, abyssAddress}) {
                 const provider = new Provider("http://127.0.0.1:8011");
 
                 const aaFactory = new ethers.Contract(
-                    "0x094499Df5ee555fFc33aF07862e43c90E6FEe501",
+                    process.env.REACT_APP_FACTORY_ADDRESS,
                     factoryABI,
                     provider,
                 );
 
                 const salt = ethers.constants.HashZero;
 
+                const owner1 = Wallet.createRandom();
+
                 let aaTx = await aaFactory.populateTransaction.deployAccount(
                     salt,
-                    // These are accounts that will own the newly deployed account
-                    address,
+                    owner1.address,
                 );
 
                 // const gasLimit = await provider.estimateGas(aaTx);
@@ -82,9 +84,13 @@ function SendFlap({showSendToken, abyssAddress}) {
                 
                 const signedTxHash = EIP712Signer.getSignedDigest(aaTx);
 
-                const wallet = new Wallet("0x7726827caac94a7f9e1b160f7ea819f172f7b6f9d2a97f992c38edeab82d4110").connect(provider);
+                const wallet = new Wallet("0xac1e735be8536c6534bb4f17f06f6afc73b2b5ba84ac2cfb12f7461b20c0bbe3").connect(provider);
 
-                const signature = ethers.utils.joinSignature(wallet._signingKey().signDigest(signedTxHash))
+                const signature = ethers.utils.concat([
+                    // Note, that `signMessage` wouldn't work here, since we don't want
+                    // the signed hash to be prefixed with `\x19Ethereum Signed Message:\n`
+                    ethers.utils.joinSignature(wallet._signingKey().signDigest(signedTxHash)),
+                ]);
 
                 aaTx.customData = {
                     ...aaTx.customData,
@@ -93,10 +99,10 @@ function SendFlap({showSendToken, abyssAddress}) {
 
                 console.log(aaTx)
 
-                const sentTx = await provider.sendTransaction(aaTx);
+                const sentTx = await provider.sendTransaction(utils.serialize(aaTx));
                 await sentTx.wait();
 
-                // console.log(sentTx)
+                console.log(sentTx)
             }
         }
 

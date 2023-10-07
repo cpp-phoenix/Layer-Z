@@ -26,8 +26,6 @@ async function storeFiles(files) {
 function Login({setLoggedIn}) {
     const { address, isConnected } = useAccount()
 
-    const provider = usePublicClient()
-
     const uploadToIPFS = async (myJSON) => {
         const blob = new Blob([JSON.stringify(myJSON)], { type: 'application/json' })
 
@@ -44,10 +42,10 @@ function Login({setLoggedIn}) {
 
         setLoggedIn(true)
 
-        const _provider = new Provider("http://127.0.0.1:8011");
+        const provider = new Provider("http://127.0.0.1:8011");
         
         // Private key of the account used to deploy
-        const wallet = new ethers.Wallet(process.env.REACT_APP_DEPLOYER_PRIVATE_KEY).connect(_provider);
+        const wallet = new ethers.Wallet(process.env.REACT_APP_DEPLOYER_PRIVATE_KEY).connect(provider);
       
         const aaFactory = new ethers.Contract(
           process.env.REACT_APP_FACTORY_ADDRESS,
@@ -58,21 +56,20 @@ function Login({setLoggedIn}) {
         // For the simplicity of the tutorial, we will use zero hash as salt
         const salt = HashZero;
 
-        console.log(salt)
-      
         // deploy account owned by owner1 & owner2
         let tx = await aaFactory.deployAccount(
           salt,
-          address,
+          address
         );
         await tx.wait();
 
         // Getting the address of the deployed contract account
         const abiCoder = new ethers.utils.AbiCoder();
-        const multisigAddress = ethers.utils.getCreate2Address(
+        const multisigAddress = utils.create2Address(
             process.env.REACT_APP_FACTORY_ADDRESS,
-            salt,
             await aaFactory.aaBytecodeHash(),
+            salt,
+            abiCoder.encode(["address"], [address]),
         );
         console.log(`Multisig account deployed on address ${multisigAddress}`);
 

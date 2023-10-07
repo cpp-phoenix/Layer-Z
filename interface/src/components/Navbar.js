@@ -25,6 +25,7 @@ function Navbar({selected}) {
                     let tokenURI = await soulBountContract.tokenURI(tokenId)
                     let response = await fetch(tokenURI)
                     let data = await response.json()
+                    console.log(data)
                     setAbyssWallet(data.multiSig)
                     setLoggedIn(true)
                 } 
