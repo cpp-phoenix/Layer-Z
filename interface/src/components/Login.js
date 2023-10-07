@@ -3,7 +3,9 @@ import { useAccount } from 'wagmi';
 import { ethers } from 'ethers';
 import { HashZero } from '@ethersproject/constants';
 import { Web3Storage } from 'web3.storage';
+import { usePublicClient } from 'wagmi'
 import multisigABI from "./../multisigABI.json";
+import { utils, Wallet, Provider, EIP712Signer, types } from "zksync-web3";
 import factoryABI from "./../factoryABI.json";
 import nftABI from "./../nftABI.json";
 
@@ -24,6 +26,8 @@ async function storeFiles(files) {
 function Login({setLoggedIn}) {
     const { address, isConnected } = useAccount()
 
+    const provider = usePublicClient()
+
     const uploadToIPFS = async (myJSON) => {
         const blob = new Blob([JSON.stringify(myJSON)], { type: 'application/json' })
 
@@ -40,10 +44,10 @@ function Login({setLoggedIn}) {
 
         setLoggedIn(true)
 
-        const _provider = new ethers.utils.JsonRpcProvider("http://127.0.0.1:8011");
+        const _provider = new Provider("http://127.0.0.1:8011");
         
         // Private key of the account used to deploy
-        const wallet = new ethers.utils.Wallet(process.env.REACT_APP_DEPLOYER_PRIVATE_KEY).connect(_provider);
+        const wallet = new ethers.Wallet(process.env.REACT_APP_DEPLOYER_PRIVATE_KEY).connect(_provider);
       
         const aaFactory = new ethers.Contract(
           process.env.REACT_APP_FACTORY_ADDRESS,
@@ -64,8 +68,8 @@ function Login({setLoggedIn}) {
         await tx.wait();
 
         // Getting the address of the deployed contract account
-        const abiCoder = new ethers.AbiCoder();
-        const multisigAddress = ethers.getCreate2Address(
+        const abiCoder = new ethers.utils.AbiCoder();
+        const multisigAddress = ethers.utils.getCreate2Address(
             process.env.REACT_APP_FACTORY_ADDRESS,
             salt,
             await aaFactory.aaBytecodeHash(),

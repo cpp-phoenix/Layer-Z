@@ -5,6 +5,7 @@ import { ethers } from "ethers";
 // import { KeyDIDMethod, createAndSignCredentialJWT } from "@jpmorganchase/onyx-ssi-sdk";
 import nftABI from "./../nftABI.json";
 import Navbar from "../components/Navbar.js";
+import { utils, Wallet, Provider, EIP712Signer, types } from "zksync-web3";
 import Walletbar from "../components/Walletbar.js";
 import Login from '../components/Login';
 
@@ -17,7 +18,7 @@ function Dapps() {
     useEffect(() => {
         if(isConnected) {
             (async () => {
-                const _provider = new ethers.utils.JsonRpcProvider("http://127.0.0.1:8011");
+                const _provider = new Provider("http://127.0.0.1:8011");
                 const soulBountContract = new ethers.Contract(process.env.REACT_APP_NFT_CREATOR_CONTRACT, nftABI, _provider);
                 let tokenId = await soulBountContract.tokenID(address);
                 if(tokenId > 0) {

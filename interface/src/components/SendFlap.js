@@ -1,13 +1,15 @@
 import { useState } from 'react';
+import { useAccount } from 'wagmi'
 import { usePublicClient, useWalletClient } from 'wagmi'
+import { signMessage } from '@wagmi/core'
 import { ethers } from "ethers";
-import { Wallet, Provider } from "zksync-web3";
+import { Wallet, Provider, utils, EIP712Signer } from "zksync-web3";
+import factoryABI from "./../factoryABI.json"
 
 function SendFlap({showSendToken, abyssAddress}) {
 
-    const provider = usePublicClient()
-
     const { data: signer } = useWalletClient()
+    const { address, isConnected } = useAccount()
 
     const [receiverAddress, setReceiverAddress] = useState("")
     const [receiverAmount, setReceiverAmount] = useState(0)
@@ -44,35 +46,55 @@ function SendFlap({showSendToken, abyssAddress}) {
 
         if(receiverAddress.length > 0 && receiverAmount > 0) {
             if(currentToken === "ETH") {
-                // const gasLimit = await provider.estimateGas();
+                const provider = new Provider("http://127.0.0.1:8011");
+
+                const aaFactory = new ethers.Contract(
+                    "0x094499Df5ee555fFc33aF07862e43c90E6FEe501",
+                    factoryABI,
+                    provider,
+                );
+
+                const salt = ethers.constants.HashZero;
+
+                let aaTx = await aaFactory.populateTransaction.deployAccount(
+                    salt,
+                    // These are accounts that will own the newly deployed account
+                    address,
+                );
+
+                // const gasLimit = await provider.estimateGas(aaTx);
                 const gasPrice = await provider.getGasPrice();
-                console.log(
-                    `The multisig's nonce before the first tx is ${await provider.getTransactionCount(
-                      "0xF43521E87579335a46F8Bda4f53d8797A74C7151",
-                    )}`,
-                  );
-                // let prepareTxn = {
-                //     // deploy a new account using the multisig
-                //     from: abyssAddress,
-                //     // gasLimit: gasLimit,
-                //     gasPrice: gasPrice,
-                //     chainId: 260,
-                //     nonce: await provider.getTransactionCount(abyssAddress),
-                //     type: 113,
-                //     customData: {
-                //         gasPerPubdata: 50000,
-                //     },
-                //     value: ethers.parseEther(receiverAmount)
-                //   }; 
+                
+                aaTx = {
+                    ...aaTx,
+                    // deploy a new account using the multisig
+                    from: abyssAddress,
+                    gasLimit: gasPrice,
+                    gasPrice: gasPrice,
+                    chainId: (await provider.getNetwork()).chainId,
+                    nonce: await provider.getTransactionCount(abyssAddress),
+                    type: 113,
+                    customData: {
+                      gasPerPubdata: utils.DEFAULT_GAS_PER_PUBDATA_LIMIT,
+                    },
+                    value: ethers.BigNumber.from(0),
+                  };
+                
+                const signedTxHash = EIP712Signer.getSignedDigest(aaTx);
 
-                // const signedTxHash = signer.signTransaction(prepareTxn)
-                // prepareTxn.customData = {
-                //     ...prepareTxn.customData,
-                //     customSignature: signedTxHash,
-                // };
+                const wallet = new Wallet("0x7726827caac94a7f9e1b160f7ea819f172f7b6f9d2a97f992c38edeab82d4110").connect(provider);
 
-                // const sentTx = await provider.sendTransaction(prepareTxn);
-                // await sentTx.wait();
+                const signature = ethers.utils.joinSignature(wallet._signingKey().signDigest(signedTxHash))
+
+                aaTx.customData = {
+                    ...aaTx.customData,
+                    customSignature: signature,
+                };
+
+                console.log(aaTx)
+
+                const sentTx = await provider.sendTransaction(aaTx);
+                await sentTx.wait();
 
                 // console.log(sentTx)
             }
@@ -81,7 +103,7 @@ function SendFlap({showSendToken, abyssAddress}) {
     }
 
     return (
-        <div className='flex items-center justify-center fixed h-full w-full backdrop-blur-sm'>
+        <div className='flex items-center justify-center fixed h-full w-full backdrop-blur-sm z-10'>
             {
                 showTokensList ? 
                 <div className='flex items-center justify-center fixed w-full h-full backdrop-blur-md z-10'>

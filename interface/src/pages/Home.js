@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useAccount } from 'wagmi'
 import { usePublicClient } from 'wagmi'
+import { utils, Wallet, Provider, EIP712Signer, types } from "zksync-web3";
 import { ethers } from "ethers";
 // import { KeyDIDMethod, createAndSignCredentialJWT } from "@jpmorganchase/onyx-ssi-sdk";
 import nftABI from "./../nftABI.json";
@@ -23,7 +24,7 @@ function Home() {
     useEffect(() => {
         if(isConnected) {
             (async () => {
-                const _provider = new ethers.utils.JsonRpcProvider("http://127.0.0.1:8011");
+                const _provider = new Provider("http://127.0.0.1:8011");
                 const soulBountContract = new ethers.Contract(process.env.REACT_APP_NFT_CREATOR_CONTRACT, nftABI, _provider);
                 let tokenId = await soulBountContract.tokenID(address);
                 if(tokenId > 0) {
@@ -34,7 +35,7 @@ function Home() {
                     setAbyssAddress(data.multiSig)
 
                     let balance = await _provider.getBalance(data.multiSig)
-                    setEthBalance(ethers.formatEther(balance))
+                    setEthBalance(ethers.utils.formatEther(balance))
 
                     setLoggedIn(true)
                 }
