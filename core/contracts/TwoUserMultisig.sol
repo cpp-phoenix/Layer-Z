@@ -122,15 +122,14 @@ contract TwoUserMultisig is IAccount, IERC1271 {
     {
         magic = EIP1271_SUCCESS_RETURN_VALUE;
 
-        if (_signature.length != 130) {
+        if (_signature.length != 65) {
             // Signature is invalid anyway, but we need to proceed with the signature verification as usual
             // in order for the fee estimation to work correctly
-            _signature = new bytes(130);
+            _signature = new bytes(65);
             
             // Making sure that the signatures look like a valid ECDSA signature and are not rejected rightaway
             // while skipping the main verification process.
             _signature[64] = bytes1(uint8(27));
-            _signature[129] = bytes1(uint8(27));
         }
 
         (bytes memory signature1) = extractECDSASignature(_signature);
@@ -190,7 +189,7 @@ contract TwoUserMultisig is IAccount, IERC1271 {
     }
     
     function extractECDSASignature(bytes memory _fullSignature) internal pure returns (bytes memory signature1) {
-        require(_fullSignature.length == 130, "Invalid length");
+        require(_fullSignature.length == 65, "Invalid length");
 
         signature1 = new bytes(65);
 

@@ -6,6 +6,8 @@ import { ethers } from "ethers";
 import { Wallet, Provider, utils, EIP712Signer } from "zksync-web3";
 import factoryABI from "./../factoryABI.json"
 import multisigABI from "./../multisigABI.json"
+import tokenABI from "./../tokenABI.json"
+
 
 function SendFlap({showSendToken, abyssAddress}) {
 
@@ -54,20 +56,25 @@ function SendFlap({showSendToken, abyssAddress}) {
                 provider,
             );
 
+            const tokenFactory = new ethers.Contract(
+                tokensList[currentToken].contract,
+                tokenABI,
+                provider,
+            );
+
             const salt = ethers.constants.HashZero;
 
             const owner1 = Wallet.createRandom();
 
-            let aaTx = await aaFactory.populateTransaction.deployAccount(
-                salt,
-                owner1.address,
+            // let aaTx = await aaFactory.populateTransaction.deployAccount(
+            //     salt,
+            //     owner1.address,
+            // );
+            
+            let aaTx = await tokenFactory.populateTransaction.transfer(
+                receiverAddress,
+                ethers.utils.parseEther(receiverAmount),
             );
-
-            // let aaTx = {
-            //     to: receiverAddress
-            // }
-
-            console.log(aaTx)
 
             // const gasLimit = await provider.estimateGas(aaTx);
             const gasPrice = await provider.getGasPrice();
@@ -84,11 +91,8 @@ function SendFlap({showSendToken, abyssAddress}) {
                 customData: {
                     gasPerPubdata: utils.DEFAULT_GAS_PER_PUBDATA_LIMIT,
                 },
-                // value: ethers.BigNumber.from(0),
-                value: ethers.utils.parseEther(receiverAmount.toString())
-                };
-
-            console.log(aaTx)
+                value: ethers.BigNumber.from(0),
+            };
             
             const signedTxHash = EIP712Signer.getSignedDigest(aaTx);
 

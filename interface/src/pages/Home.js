@@ -5,6 +5,8 @@ import { utils, Wallet, Provider, EIP712Signer, types } from "zksync-web3";
 import { ethers } from "ethers";
 // import { KeyDIDMethod, createAndSignCredentialJWT } from "@jpmorganchase/onyx-ssi-sdk";
 import nftABI from "./../nftABI.json";
+import { Core } from '@walletconnect/core'
+import { Web3Wallet } from '@walletconnect/web3wallet'
 import Navbar from "../components/Navbar.js";
 import Walletbar from "../components/Walletbar.js";
 import SendFlap from '../components/SendFlap';
@@ -15,6 +17,7 @@ import tokenABI from "./../tokenABI.json"
 function Home() {
     const { address, isConnected } = useAccount()
     const provider = usePublicClient()
+    
 
     const [loggedin, setLoggedIn] = useState(false)
     const [ethBalance, setEthBalance] = useState(0)
@@ -69,8 +72,6 @@ function Home() {
 
     const TokenFlap = ({keydata}) => {
         const [amount, setAmount] = useState(0)
-
-        console.log("Key data, ",keydata)
         const provider = new Provider("http://127.0.0.1:8011");
 
         const tokenFactory = new ethers.Contract(

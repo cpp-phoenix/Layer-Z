@@ -3,7 +3,7 @@ import * as ethers from "ethers";
 import { HardhatRuntimeEnvironment } from "hardhat/types";
 
 // Put the address of your AA factory
-const AA_FACTORY_ADDRESS = "0xf2FcC18ED5072b48C0a076693eCa72fE840b3981";
+const AA_FACTORY_ADDRESS = "0x1F0151386fB0AbBF0273238dF5E9bc519DE5e20B";
 
 export default async function (hre: HardhatRuntimeEnvironment) {
   const provider = new Provider("http://127.0.0.1:8011");
@@ -53,4 +53,60 @@ export default async function (hre: HardhatRuntimeEnvironment) {
   let multisigBalance = await provider.getBalance(multisigAddress);
 
   console.log(`Multisig account balance is ${multisigBalance.toString()}`);
+
+  // Transaction to deploy a new account using the multisig we just deployed
+  let aaTx = await aaFactory.populateTransaction.deployAccount(
+    salt,
+    // These are accounts that will own the newly deployed account
+    Wallet.createRandom().address
+  );
+
+  const gasLimit = await provider.estimateGas(aaTx);
+  const gasPrice = await provider.getGasPrice();
+
+  aaTx = {
+    ...aaTx,
+    // deploy a new account using the multisig
+    from: multisigAddress,
+    gasLimit: gasLimit,
+    gasPrice: gasPrice,
+    chainId: (await provider.getNetwork()).chainId,
+    nonce: await provider.getTransactionCount(multisigAddress),
+    type: 113,
+    customData: {
+      gasPerPubdata: utils.DEFAULT_GAS_PER_PUBDATA_LIMIT,
+    } as types.Eip712Meta,
+    value: ethers.BigNumber.from(0),
+  };
+  const signedTxHash = EIP712Signer.getSignedDigest(aaTx);
+
+  const signature = ethers.utils.concat([
+    // Note, that `signMessage` wouldn't work here, since we don't want
+    // the signed hash to be prefixed with `\x19Ethereum Signed Message:\n`
+    ethers.utils.joinSignature(owner1._signingKey().signDigest(signedTxHash)),
+  ]);
+
+  aaTx.customData = {
+    ...aaTx.customData,
+    customSignature: signature,
+  };
+
+  console.log(
+    `The multisig's nonce before the first tx is ${await provider.getTransactionCount(
+      multisigAddress,
+    )}`,
+  );
+  const sentTx = await provider.sendTransaction(utils.serialize(aaTx));
+  await sentTx.wait();
+
+  // Checking that the nonce for the account has increased
+  console.log(
+    `The multisig's nonce after the first tx is ${await provider.getTransactionCount(
+      multisigAddress,
+    )}`,
+  );
+
+  multisigBalance = await provider.getBalance(multisigAddress);
+
+  console.log(`Multisig account balance is now ${multisigBalance.toString()}`);
 }
