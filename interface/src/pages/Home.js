@@ -19,9 +19,7 @@ import tokenABI from "./../tokenABI.json"
 import { signClient } from './../utils/WalletConnectUtils'
 
 function Home({initialized}) {
-    const { address, isConnected } = useAccount()
-    const provider = usePublicClient()
-    
+    const { address, isConnected } = useAccount()    
     const [pairData, setPairData] = useState({})
     const [isLoading, setIsLoading] = useState(true)
     const [loggedin, setLoggedIn] = useState(false)
@@ -76,6 +74,7 @@ function Home({initialized}) {
                 let tokenId = await soulBountContract.tokenID(address);
                 if(tokenId > 0) {
                     let tokenURI = await soulBountContract.tokenURI(tokenId)
+                    console.log("TokenURI: ", tokenURI)
                     let response = await fetch(tokenURI)
                     let data = await response.json()
 
@@ -85,8 +84,8 @@ function Home({initialized}) {
                     setEthBalance(ethers.utils.formatEther(balance))
 
                     setLoggedIn(true)
-                    setIsLoading(false)
                 }
+                setIsLoading(false)
             })();
         }
     },[isConnected])
@@ -102,9 +101,12 @@ function Home({initialized}) {
         );
 
         (async () => {
-            let data = await tokenFactory.balanceOf(abyssAddress);
-            setAmount(ethers.utils.formatEther(data));
+            if(abyssAddress.length > 0) {
+                let data = await tokenFactory.balanceOf(abyssAddress);
+                setAmount(ethers.utils.formatEther(data));
+            }
         })()
+
         return (
             <div className='my-2'>
                 <div className="w-full px-8 flex items-center justify-center font-semibold rounded-lg h-[70px]"> 

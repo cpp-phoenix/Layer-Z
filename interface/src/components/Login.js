@@ -6,6 +6,7 @@ import { Web3Storage } from 'web3.storage';
 import { usePublicClient } from 'wagmi'
 import multisigABI from "./../multisigABI.json";
 import { utils, Wallet, Provider, EIP712Signer, types } from "zksync-web3";
+// import { DIDWithKeys, EthrDIDMethod } from "@jpmorganchase/onyx-ssi-sdk";
 import factoryABI from "./../factoryABI.json";
 import nftABI from "./../nftABI.json";
 
@@ -39,8 +40,6 @@ function Login({setLoggedIn}) {
     }
 
     const deploySmartAccount = async () => {
-
-        setLoggedIn(true)
 
         const provider = new Provider("http://127.0.0.1:8011");
         
@@ -89,11 +88,13 @@ function Login({setLoggedIn}) {
 
         tx = await nftFactory.safeMint(address, ifpsLink)
 
+        setLoggedIn(true)
+
     }
 
     return (
-        <div className="flex items-center justify-center border h-5/6">
-            <button onClick={() => deploySmartAccount()} className="rounded-lg border px-6 py-3 text-white bg-[#07A65D] font-semibold">Login</button>
+        <div className="flex items-center justify-center h-5/6">
+            <button onClick={() => deploySmartAccount()} className="rounded-lg px-6 py-3 text-white bg-[#07A65D] font-semibold">Login</button>
         </div>
     )
 }
