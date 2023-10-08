@@ -125,7 +125,7 @@ function SendFlap({showSendToken, abyssAddress}) {
                     <div className='rounded-lg fixed w-[400px] h-[540px] bg-white p-4'>
                         <div className='flex w-full justify-end'>
                             <div className=''>
-                                <button onClick={() => showSendToken(false)} className='bg-[#f1f5f9] rounded-full p-[6px]'><svg data-v-4d731bae="" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 3.5L3.5 10.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3.5 3.5L10.5 10.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+                                <button onClick={() => setShowTokensList(false)} className='bg-[#f1f5f9] rounded-full p-[6px]'><svg data-v-4d731bae="" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 3.5L3.5 10.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3.5 3.5L10.5 10.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
                             </div>
                         </div>
                         <div className='font-semibold text-lg flex w-full justify-center border-b pb-2 mb-6'>Select a token</div>
@@ -145,7 +145,7 @@ function SendFlap({showSendToken, abyssAddress}) {
                     </div>
                 </div>  : <div></div>
             }
-            <div className='rounded-lg w-[450px] h-4/6 bg-white p-6'>
+            <div className='rounded-lg w-[450px] h-[450px] bg-white p-6'>
                 <div className='flex space-x-3'>
                     <div className='flex items-center'>
                         <div className='rounded-full p-3 bg-[#07A65D] text-white'>

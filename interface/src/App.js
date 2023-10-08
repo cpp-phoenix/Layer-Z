@@ -10,6 +10,8 @@ import { publicProvider } from 'wagmi/providers/public';
 import Home from './pages/Home.js';
 import Dapps from './pages/Dapps.js';
 import Transactions from './pages/Transactions.js';
+import useInitialization from './hooks/useInitialization'
+import useWalletConnectEventsManager from './hooks/useWalletConnectEventsManager'
 
 export const zksyncDevnet = {
   id: 260,
@@ -46,13 +48,18 @@ const wagmiConfig = createConfig({
 })
 
 function App() {
+
+  const initialized = useInitialization()
+
+  useWalletConnectEventsManager(initialized)
+
   return (
     <div className='h-screen w-screen'>
       <WagmiConfig config={wagmiConfig}>
         <RainbowKitProvider chains={chains}>
           <Router>
             <Routes>
-              <Route path='/' exact element={<Home/>}/>
+              <Route path='/' exact element={<Home initialized={initialized}/>}/>
               <Route path='/dapps' exact element={<Dapps/>}/>
               <Route path='/txns' exact element={<Transactions/>}/>
             </Routes>

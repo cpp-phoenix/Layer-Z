@@ -27,6 +27,7 @@
     "deploy:factory": "yarn hardhat deploy-zksync --script deploy-factory.ts",
     "deploy:multisig": "yarn hardhat deploy-zksync --script deploy-multisig.ts",
     "deploy:nft": "yarn hardhat deploy-zksync --script deploy-nft.ts",
-    "deploy:token": "yarn hardhat deploy-zksync --script deploy-token.ts"
+    "deploy:token": "yarn hardhat deploy-zksync --script deploy-token.ts",
+    "deploy:messenger": "yarn hardhat deploy-zksync --script deploy-messenger.ts"
   }
 }
